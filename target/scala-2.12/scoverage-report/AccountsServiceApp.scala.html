@@ -1,0 +1,255 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          AccountsServiceApp.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>import akka.Done
+</span>2 <span style=''>import akka.actor.ActorSystem
+</span>3 <span style=''>import akka.http.scaladsl.Http
+</span>4 <span style=''>import akka.stream.ActorMaterializer
+</span>5 <span style=''>import com.accounts.actors.RouterActor
+</span>6 <span style=''>import com.accounts.config.ServiceConfiguration
+</span>7 <span style=''>import com.accounts.context.ResourceContext
+</span>8 <span style=''>import com.accounts.routes.AccountsRoutes
+</span>9 <span style=''>import com.accounts.storage.CustomerInfoDatabase
+</span>10 <span style=''>import com.typesafe.config.ConfigFactory
+</span>11 <span style=''>
+</span>12 <span style=''>import scala.concurrent.{ExecutionContext, Future}
+</span>13 <span style=''>
+</span>14 <span style=''>object  AccountsServiceApp {
+</span>15 <span style=''>
+</span>16 <span style=''>  def start()(implicit system: ActorSystem, ec: ExecutionContext, mat: ActorMaterializer): Future[Done] = {
+</span>17 <span style=''>    val db= </span><span style='background: #F0ADAD'>new CustomerInfoDatabase()</span><span style=''>
+</span>18 <span style=''>    val config= </span><span style='background: #F0ADAD'>ConfigFactory.load(&quot;application&quot;)</span><span style=''>
+</span>19 <span style=''>    val sc: ServiceConfiguration= </span><span style='background: #F0ADAD'>ServiceConfiguration(config)</span><span style=''>
+</span>20 <span style=''>    implicit val rc:ResourceContext= </span><span style='background: #F0ADAD'>new ResourceContext(db,sc)</span><span style=''>
+</span>21 <span style=''>    val routerActor = </span><span style='background: #F0ADAD'>system.actorOf(RouterActor.props, &quot;router-actor&quot;)</span><span style=''>
+</span>22 <span style=''>    </span><span style='background: #F0ADAD'>Http(system).bindAndHandle(
+</span>23 <span style=''></span><span style='background: #F0ADAD'>      AccountsRoutes(routerActor).apiRoutes(mat),&quot;0.0.0.0&quot;,9001) .map(x =&gt; Done)</span><span style=''>
+</span>24 <span style=''>
+</span>25 <span style=''>  }
+</span>26 <span style=''>
+</span>27 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          597
+          -
+          623
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.storage.CustomerInfoDatabase.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new com.accounts.storage.CustomerInfoDatabase()
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          2
+        </td>
+        <td>
+          641
+          -
+          674
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.typesafe.config.ConfigFactory.load
+        </td>
+        <td style="background: #F0ADAD">
+          com.typesafe.config.ConfigFactory.load(&quot;application&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          3
+        </td>
+        <td>
+          710
+          -
+          738
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.config.ServiceConfiguration.apply
+        </td>
+        <td style="background: #F0ADAD">
+          com.accounts.config.ServiceConfiguration.apply(config)
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          4
+        </td>
+        <td>
+          777
+          -
+          803
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.context.ResourceContext.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new com.accounts.context.ResourceContext(db, sc)
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          5
+        </td>
+        <td>
+          842
+          -
+          859
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          com.accounts.actors.RouterActor.props
+        </td>
+        <td style="background: #F0ADAD">
+          com.accounts.actors.RouterActor.props()(ec, rc)
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          7
+        </td>
+        <td>
+          827
+          -
+          876
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.actor.ActorRefFactory.actorOf
+        </td>
+        <td style="background: #F0ADAD">
+          system.actorOf(com.accounts.actors.RouterActor.props()(ec, rc), &quot;router-actor&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          6
+        </td>
+        <td>
+          861
+          -
+          875
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;router-actor&quot;
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          8
+        </td>
+        <td>
+          882
+          -
+          991
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          scala.concurrent.Future.map
+        </td>
+        <td style="background: #F0ADAD">
+          {
+  &lt;artifact&gt; val qual$1: akka.http.scaladsl.HttpExt = akka.http.scaladsl.Http.apply(system);
+  &lt;artifact&gt; val x$9: akka.stream.scaladsl.Flow[akka.http.scaladsl.model.HttpRequest,akka.http.scaladsl.model.HttpResponse,akka.NotUsed] = {
+    &lt;artifact&gt; val x$1: akka.http.scaladsl.server.Route = com.accounts.routes.AccountsRoutes.apply(routerActor)(ec).apiRoutes(mat);
+    &lt;artifact&gt; val x$2: akka.http.scaladsl.settings.RoutingSettings = settings.this.RoutingSettings.default(system);
+    &lt;artifact&gt; val x$3: akka.http.scaladsl.settings.ParserSettings = settings.this.ParserSettings.default(system);
+    &lt;artifact&gt; val x$4: akka.stream.ActorMaterializer = mat;
+    &lt;artifact&gt; val x$5: akka.http.scaladsl.server.RoutingLog = server.this.RoutingLog.fromActorSystem(system);
+    &lt;artifact&gt; val x$6: scala.concurrent.ExecutionContext = ec;
+    &lt;artifact&gt; val x$7: akka.http.scaladsl.server.RejectionHandler = server.this.RouteResult.route2HandlerFlow$default$7(x$1);
+    &lt;artifact&gt; val x$8: akka.http.scaladsl.server.ExceptionHandler = server.this.RouteResult.route2HandlerFlow$default$8(x$1);
+    server.this.RouteResult.route2HandlerFlow(x$1)(x$2, x$3, x$4, x$5, x$6, x$7, x$8)
+  };
+  &lt;artifact&gt; val x$10: String = &quot;0.0.0.0&quot;;
+  &lt;artifact&gt; val x$11: Int = 9001;
+  &lt;artifact&gt; val x$12: akka.http.scaladsl.ConnectionContext = qual$1.bindAndHandle$default$4;
+  &lt;artifact&gt; val x$13: akka.http.scaladsl.settings.ServerSettings = qual$1.bindAndHandle$default$5;
+  &lt;artifact&gt; val x$14: akka.event.LoggingAdapter = qual$1.bindAndHandle$default$6;
+  qual$1.bindAndHandle(x$9, x$10, x$11, x$12, x$13, x$14)(mat)
+}.map[akka.Done.type](((x: akka.http.scaladsl.Http.ServerBinding) =&gt; akka.Done))(ec)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

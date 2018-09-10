@@ -1,0 +1,339 @@
+[debug] :: building artificial module descriptors from accounts#accounts$sources_2.12;0.1.0-SNAPSHOT
+[debug] ::: dd: dependency: com.typesafe.akka#akka-http-testkit_2.12;10.1.1 {test=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: akka-http-testkit_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.thoughtworks.paranamer#paranamer;2.8 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: paranamer:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scalactic#scalactic_2.12;3.2.0-SNAP10 {test=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scalactic_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.akka#akka-stream_2.12;2.5.12 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: akka-stream_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scoverage#scalac-scoverage-runtime_2.12;1.4.0-M3 {test=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: scalac-scoverage-runtime_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-lang#scala-library;2.12.4 {scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scala-library:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.akka#akka-http_2.12;10.1.1 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: akka-http_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.json4s#json4s-core_2.12;3.6.0-M2 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: json4s-core_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: net.bytebuddy#byte-buddy;1.7.9 {test=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: byte-buddy:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe#config;1.3.2 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: config:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: net.bytebuddy#byte-buddy-agent;1.7.9 {test=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: byte-buddy-agent:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-lang.modules#scala-xml_2.12;1.0.6 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scala-xml_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: ch.qos.logback#logback-core;1.1.7 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: logback-core:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.reactivestreams#reactive-streams;1.0.2 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: reactive-streams:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: commons-logging#commons-logging;1.2 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: commons-logging:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.akka#akka-stream-testkit_2.12;2.5.11 {test=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: akka-stream-testkit_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.akka#akka-actor_2.12;2.5.12 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: akka-actor_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.apache.httpcomponents#httpcore;4.4.7 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: httpcore:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: ch.qos.logback#logback-classic;1.1.7 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: logback-classic:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe#ssl-config-core_2.12;0.2.3 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: ssl-config-core_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-lang#scala-library;2.12.5 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scala-library:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.slf4j#slf4j-api;1.7.25 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: slf4j-api:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.mockito#mockito-core;2.13.0 {test=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: mockito-core:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scalamock#scalamock-core_2.12;3.6.0 {test=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scalamock-core_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.akka#akka-testkit_2.12;2.5.12 {test=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: akka-testkit_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scalatest#scalatest_2.12;3.2.0-SNAP10 {test=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: scalatest_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-lang#scala-reflect;2.12.4 {test=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], scala-tool=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scala-reflect:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.apache.httpcomponents#httpclient;4.5.4 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: httpclient:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.json4s#json4s-ast_2.12;3.6.0-M2 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: json4s-ast_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: commons-codec#commons-codec;1.10 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: commons-codec:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-lang.modules#scala-parser-combinators_2.12;1.1.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scala-parser-combinators_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.google.code.gson#gson;2.8.2 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: gson:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.json4s#json4s-scalap_2.12;3.6.0-M2 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: json4s-scalap_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: jline#jline;2.14.5 {scala-tool=[compile, master(compile), compile(*), master]} (artifacts: jline:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.objenesis#objenesis;2.6 {test=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: objenesis:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-lang#scala-compiler;2.12.4 {scala-tool=[default, compile, runtime, optional, optional(default), master]} (artifacts: scala-compiler:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.json4s#json4s-native_2.12;3.6.0-M2 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: json4s-native_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.akka#akka-parsing_2.12;10.1.1 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: akka-parsing_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.akka#akka-protobuf_2.12;2.5.12 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: akka-protobuf_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-sbt#test-interface;1.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: test-interface:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scalacheck#scalacheck_2.12;1.14.0 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: scalacheck_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.akka#akka-http-core_2.12;10.1.1 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: akka-http-core_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scalamock#scalamock-scalatest-support_2.12;3.6.0 {test=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: scalamock-scalatest-support_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: org.scala-lang.modules#scala-java8-compat_2.12;0.8.0 {compile=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime=[compile, runtime(*), master(compile), runtime, compile(*), master], test=[compile, runtime(*), master(compile), runtime, compile(*), master], compile-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], runtime-internal=[compile, runtime(*), master(compile), runtime, compile(*), master], test-internal=[compile, runtime(*), master(compile), runtime, compile(*), master]} (artifacts: scala-java8-compat_2.12:src:jar:{classifier=sources})
+[debug] ::: dd: dependency: com.typesafe.akka#akka-slf4j_2.12;2.5.12 {compile=[default, compile, runtime, default(compile), master], runtime=[default, compile, runtime, default(compile), master], test=[default, compile, runtime, default(compile), master], compile-internal=[default, compile, runtime, default(compile), master], runtime-internal=[default, compile, runtime, default(compile), master], test-internal=[default, compile, runtime, default(compile), master]} (artifacts: akka-slf4j_2.12:src:jar:{classifier=sources})
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe.akka\akka-http-testkit_2.12\10.1.1_temp-resolve-2d648259224eb1161957f51040f040593d17ea13\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.thoughtworks.paranamer\paranamer\2.8_temp-resolve-754d08f50a6093e83e15c32f61530030f1b2c80a\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scalactic\scalactic_2.12\3.2.0-SNAP10_temp-resolve-5f6741a89de417801ae511dd6604a62dc45a7b43\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe.akka\akka-stream_2.12\2.5.12_temp-resolve-013f35618bf4496e3ef5c440627c1581cd605b74\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scoverage\scalac-scoverage-runtime_2.12\1.4.0-M3_temp-resolve-f20361ebc25928c4b56501c0b55b87f98215dbe3\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scala-lang\scala-library\2.12.4_temp-resolve-c332434b0bf4dadd11012ecf099e45fc2230d644\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe.akka\akka-http_2.12\10.1.1_temp-resolve-cdb981958d157327040f5fa319217fa2ea2cb14e\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.json4s\json4s-core_2.12\3.6.0-M2_temp-resolve-2d747fddb479ed09b6d60559dbc862d822caa747\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\net.bytebuddy\byte-buddy\1.7.9_temp-resolve-802480147c4cf7029286f3da6508049512480b01\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe\config\1.3.2_temp-resolve-23dd8695de60a9d62a21df2de153799e817a152c\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\net.bytebuddy\byte-buddy-agent\1.7.9_temp-resolve-96716b60cd5be4d3f5bdcad78d4a15fb8c6f99ec\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scala-lang.modules\scala-xml_2.12\1.0.6_temp-resolve-c4c8034c6d653f17431ad4890ced3adc96bfa59a\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\ch.qos.logback\logback-core\1.1.7_temp-resolve-0d396e55f32877f5ea23c4c557aea7f9e5df5c11\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.reactivestreams\reactive-streams\1.0.2_temp-resolve-009d83b7d787d84fa9a892e03f9b33043809306e\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\commons-logging\commons-logging\1.2_temp-resolve-441cde891d6864cf395c086d8241a2de81d6fd80\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe.akka\akka-stream-testkit_2.12\2.5.11_temp-resolve-35f8746a34f529b5d04a895e78da6c0357270981\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe.akka\akka-actor_2.12\2.5.12_temp-resolve-b96d3bd082f9e554a2cab0773003a53d8b675a3d\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.apache.httpcomponents\httpcore\4.4.7_temp-resolve-693d42115eddc1434ca49e5a9d9ec3eeafc52613\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\ch.qos.logback\logback-classic\1.1.7_temp-resolve-869e82a41883e49b1311fae2cdf32851655d37b6\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe\ssl-config-core_2.12\0.2.3_temp-resolve-b5e362f4c979e522c3eac701be2e6786193c46a5\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scala-lang\scala-library\2.12.5_temp-resolve-d17b58b90b94d5e7ac2f4867367a364450f6fb27\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.slf4j\slf4j-api\1.7.25_temp-resolve-e74597c880f4837ff3be33192f5ab1a88e22afb4\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.mockito\mockito-core\2.13.0_temp-resolve-74442b115b3a4629c4729a0ebd159110c66ecbfb\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scalamock\scalamock-core_2.12\3.6.0_temp-resolve-5dbe858681ec0d6dacaea6cdf7062bbba84a8657\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe.akka\akka-testkit_2.12\2.5.12_temp-resolve-9aca536e04ef25d866fd489840c5c4e2a450e939\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scalatest\scalatest_2.12\3.2.0-SNAP10_temp-resolve-7230fbe3f0a4a8c9157392986490ef01e2b8e20e\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scala-lang\scala-reflect\2.12.4_temp-resolve-ae6d767168cd272f52a26be84c916b620752e31d\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.apache.httpcomponents\httpclient\4.5.4_temp-resolve-e85de29b7e0a7b2ad5aebf7b90fda05bb61b772e\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.json4s\json4s-ast_2.12\3.6.0-M2_temp-resolve-38d5f1383436cc5b75297101c1430845519283f2\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\commons-codec\commons-codec\1.10_temp-resolve-81743c7c19f75e79d2ceae1ec44320ebf382c676\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scala-lang.modules\scala-parser-combinators_2.12\1.1.0_temp-resolve-e47520f38667f8116bbc1acffa03d35b02cd609e\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.google.code.gson\gson\2.8.2_temp-resolve-b0d4a0881312a77a0c98667106680338647585c8\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.json4s\json4s-scalap_2.12\3.6.0-M2_temp-resolve-e32f9ba45f374b64cc1db60cc181c9c093060e32\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\jline\jline\2.14.5_temp-resolve-b6e45bc1eb6ba4844e3511408071a9261b6187df\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.objenesis\objenesis\2.6_temp-resolve-960ad9cffb9b132ee820950f1dc79c234e3395e4\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scala-lang\scala-compiler\2.12.4_temp-resolve-6b40b6058a3f30de050632c6e94f2c411969fc3a\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.json4s\json4s-native_2.12\3.6.0-M2_temp-resolve-e7688b304e05fd5e9720358e17fd2f010654dee3\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe.akka\akka-parsing_2.12\10.1.1_temp-resolve-aadd07b8f72d017c47487ba8904c68721914500c\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe.akka\akka-protobuf_2.12\2.5.12_temp-resolve-42d43f09fe624727db2cb558ac0e144b7f3fe2ad\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scala-sbt\test-interface\1.0_temp-resolve-53454e81f5e43f1398ce5d9ec64e68dc460de246\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scalacheck\scalacheck_2.12\1.14.0_temp-resolve-6289f41ee77abe903730fa492eb2640351f7de3c\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe.akka\akka-http-core_2.12\10.1.1_temp-resolve-b8c8bae00caf66ba5537254e9a32526ba7f1b2fe\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scalamock\scalamock-scalatest-support_2.12\3.6.0_temp-resolve-dda1b32b4f2426d3f54f06e4f54044d37b680b52\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scala-lang.modules\scala-java8-compat_2.12\0.8.0_temp-resolve-9e2673f4a70966f4d20cbb88b540156069262dba\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe.akka\akka-slf4j_2.12\2.5.12_temp-resolve-ddf379e171842444f7cfac862f50413bdb0f6a70\graphs\graph.json
+[debug] :: merging update reports
+[debug] ::: -----------
+[debug] :: compile: loop: List()
+[debug] :: sort result: com.thoughtworks.paranamer:paranamer, com.typesafe.akka:akka-stream_2.12, com.typesafe.akka:akka-http_2.12, org.json4s:json4s-core_2.12, com.typesafe:config, org.scala-lang.modules:scala-xml_2.12, ch.qos.logback:logback-core, org.reactivestreams:reactive-streams, commons-logging:commons-logging, com.typesafe.akka:akka-actor_2.12, org.apache.httpcomponents:httpcore, ch.qos.logback:logback-classic, com.typesafe:ssl-config-core_2.12, org.scala-lang:scala-library, org.slf4j:slf4j-api, org.apache.httpcomponents:httpclient, org.json4s:json4s-ast_2.12, commons-codec:commons-codec, org.scala-lang.modules:scala-parser-combinators_2.12, com.google.code.gson:gson, org.json4s:json4s-scalap_2.12, org.json4s:json4s-native_2.12, com.typesafe.akka:akka-parsing_2.12, com.typesafe.akka:akka-protobuf_2.12, org.scala-sbt:test-interface, org.scalacheck:scalacheck_2.12, com.typesafe.akka:akka-http-core_2.12, org.scala-lang.modules:scala-java8-compat_2.12, com.typesafe.akka:akka-slf4j_2.12
+[debug] :: no conflict compile: com.thoughtworks.paranamer:paranamer
+[debug] :: no conflict compile: com.typesafe.akka:akka-stream_2.12
+[debug] :: no conflict compile: com.typesafe.akka:akka-http_2.12
+[debug] :: no conflict compile: org.json4s:json4s-core_2.12
+[debug] :: no conflict compile: com.typesafe:config
+[debug] :: no conflict compile: org.scala-lang.modules:scala-xml_2.12
+[debug] :: no conflict compile: ch.qos.logback:logback-core
+[debug] :: no conflict compile: org.reactivestreams:reactive-streams
+[debug] :: no conflict compile: commons-logging:commons-logging
+[debug] :: no conflict compile: com.typesafe.akka:akka-actor_2.12
+[debug] :: no conflict compile: org.apache.httpcomponents:httpcore
+[debug] :: no conflict compile: ch.qos.logback:logback-classic
+[debug] :: no conflict compile: com.typesafe:ssl-config-core_2.12
+[debug] :: no conflict compile: org.scala-lang:scala-library
+[debug] :: no conflict compile: org.slf4j:slf4j-api
+[debug] :: no conflict compile: org.apache.httpcomponents:httpclient
+[debug] :: no conflict compile: org.json4s:json4s-ast_2.12
+[debug] :: no conflict compile: commons-codec:commons-codec
+[debug] :: no conflict compile: org.scala-lang.modules:scala-parser-combinators_2.12
+[debug] :: no conflict compile: com.google.code.gson:gson
+[debug] :: no conflict compile: org.json4s:json4s-scalap_2.12
+[debug] :: no conflict compile: org.json4s:json4s-native_2.12
+[debug] :: no conflict compile: com.typesafe.akka:akka-parsing_2.12
+[debug] :: no conflict compile: com.typesafe.akka:akka-protobuf_2.12
+[debug] :: no conflict compile: org.scala-sbt:test-interface
+[debug] :: no conflict compile: org.scalacheck:scalacheck_2.12
+[debug] :: no conflict compile: com.typesafe.akka:akka-http-core_2.12
+[debug] :: no conflict compile: org.scala-lang.modules:scala-java8-compat_2.12
+[debug] :: no conflict compile: com.typesafe.akka:akka-slf4j_2.12
+[debug] ::: -----------
+[debug] :: runtime: loop: List()
+[debug] :: sort result: com.thoughtworks.paranamer:paranamer, com.typesafe.akka:akka-stream_2.12, com.typesafe.akka:akka-http_2.12, org.json4s:json4s-core_2.12, com.typesafe:config, org.scala-lang.modules:scala-xml_2.12, ch.qos.logback:logback-core, org.reactivestreams:reactive-streams, commons-logging:commons-logging, com.typesafe.akka:akka-actor_2.12, org.apache.httpcomponents:httpcore, ch.qos.logback:logback-classic, com.typesafe:ssl-config-core_2.12, org.scala-lang:scala-library, org.slf4j:slf4j-api, org.apache.httpcomponents:httpclient, org.json4s:json4s-ast_2.12, commons-codec:commons-codec, org.scala-lang.modules:scala-parser-combinators_2.12, com.google.code.gson:gson, org.json4s:json4s-scalap_2.12, org.json4s:json4s-native_2.12, com.typesafe.akka:akka-parsing_2.12, com.typesafe.akka:akka-protobuf_2.12, org.scala-sbt:test-interface, org.scalacheck:scalacheck_2.12, com.typesafe.akka:akka-http-core_2.12, org.scala-lang.modules:scala-java8-compat_2.12, com.typesafe.akka:akka-slf4j_2.12
+[debug] :: no conflict runtime: com.thoughtworks.paranamer:paranamer
+[debug] :: no conflict runtime: com.typesafe.akka:akka-stream_2.12
+[debug] :: no conflict runtime: com.typesafe.akka:akka-http_2.12
+[debug] :: no conflict runtime: org.json4s:json4s-core_2.12
+[debug] :: no conflict runtime: com.typesafe:config
+[debug] :: no conflict runtime: org.scala-lang.modules:scala-xml_2.12
+[debug] :: no conflict runtime: ch.qos.logback:logback-core
+[debug] :: no conflict runtime: org.reactivestreams:reactive-streams
+[debug] :: no conflict runtime: commons-logging:commons-logging
+[debug] :: no conflict runtime: com.typesafe.akka:akka-actor_2.12
+[debug] :: no conflict runtime: org.apache.httpcomponents:httpcore
+[debug] :: no conflict runtime: ch.qos.logback:logback-classic
+[debug] :: no conflict runtime: com.typesafe:ssl-config-core_2.12
+[debug] :: no conflict runtime: org.scala-lang:scala-library
+[debug] :: no conflict runtime: org.slf4j:slf4j-api
+[debug] :: no conflict runtime: org.apache.httpcomponents:httpclient
+[debug] :: no conflict runtime: org.json4s:json4s-ast_2.12
+[debug] :: no conflict runtime: commons-codec:commons-codec
+[debug] :: no conflict runtime: org.scala-lang.modules:scala-parser-combinators_2.12
+[debug] :: no conflict runtime: com.google.code.gson:gson
+[debug] :: no conflict runtime: org.json4s:json4s-scalap_2.12
+[debug] :: no conflict runtime: org.json4s:json4s-native_2.12
+[debug] :: no conflict runtime: com.typesafe.akka:akka-parsing_2.12
+[debug] :: no conflict runtime: com.typesafe.akka:akka-protobuf_2.12
+[debug] :: no conflict runtime: org.scala-sbt:test-interface
+[debug] :: no conflict runtime: org.scalacheck:scalacheck_2.12
+[debug] :: no conflict runtime: com.typesafe.akka:akka-http-core_2.12
+[debug] :: no conflict runtime: org.scala-lang.modules:scala-java8-compat_2.12
+[debug] :: no conflict runtime: com.typesafe.akka:akka-slf4j_2.12
+[debug] ::: -----------
+[debug] :: test: loop: List()
+[debug] :: sort result: com.typesafe.akka:akka-http-testkit_2.12, com.thoughtworks.paranamer:paranamer, org.scalactic:scalactic_2.12, com.typesafe.akka:akka-stream_2.12, org.scoverage:scalac-scoverage-runtime_2.12, com.typesafe.akka:akka-http_2.12, org.json4s:json4s-core_2.12, net.bytebuddy:byte-buddy, com.typesafe:config, net.bytebuddy:byte-buddy-agent, org.scala-lang.modules:scala-xml_2.12, ch.qos.logback:logback-core, org.reactivestreams:reactive-streams, commons-logging:commons-logging, com.typesafe.akka:akka-stream-testkit_2.12, com.typesafe.akka:akka-actor_2.12, org.apache.httpcomponents:httpcore, ch.qos.logback:logback-classic, com.typesafe:ssl-config-core_2.12, org.scala-lang:scala-library, org.slf4j:slf4j-api, org.mockito:mockito-core, org.scalamock:scalamock-core_2.12, com.typesafe.akka:akka-testkit_2.12, org.scalatest:scalatest_2.12, org.scala-lang:scala-reflect, org.apache.httpcomponents:httpclient, org.json4s:json4s-ast_2.12, commons-codec:commons-codec, org.scala-lang.modules:scala-parser-combinators_2.12, com.google.code.gson:gson, org.json4s:json4s-scalap_2.12, org.objenesis:objenesis, org.json4s:json4s-native_2.12, com.typesafe.akka:akka-parsing_2.12, com.typesafe.akka:akka-protobuf_2.12, org.scala-sbt:test-interface, org.scalacheck:scalacheck_2.12, com.typesafe.akka:akka-http-core_2.12, org.scalamock:scalamock-scalatest-support_2.12, org.scala-lang.modules:scala-java8-compat_2.12, com.typesafe.akka:akka-slf4j_2.12
+[debug] :: no conflict test: com.typesafe.akka:akka-http-testkit_2.12
+[debug] :: no conflict test: com.thoughtworks.paranamer:paranamer
+[debug] :: no conflict test: org.scalactic:scalactic_2.12
+[debug] :: no conflict test: com.typesafe.akka:akka-stream_2.12
+[debug] :: no conflict test: org.scoverage:scalac-scoverage-runtime_2.12
+[debug] :: no conflict test: com.typesafe.akka:akka-http_2.12
+[debug] :: no conflict test: org.json4s:json4s-core_2.12
+[debug] :: no conflict test: net.bytebuddy:byte-buddy
+[debug] :: no conflict test: com.typesafe:config
+[debug] :: no conflict test: net.bytebuddy:byte-buddy-agent
+[debug] :: no conflict test: org.scala-lang.modules:scala-xml_2.12
+[debug] :: no conflict test: ch.qos.logback:logback-core
+[debug] :: no conflict test: org.reactivestreams:reactive-streams
+[debug] :: no conflict test: commons-logging:commons-logging
+[debug] :: no conflict test: com.typesafe.akka:akka-stream-testkit_2.12
+[debug] :: no conflict test: com.typesafe.akka:akka-actor_2.12
+[debug] :: no conflict test: org.apache.httpcomponents:httpcore
+[debug] :: no conflict test: ch.qos.logback:logback-classic
+[debug] :: no conflict test: com.typesafe:ssl-config-core_2.12
+[debug] :: no conflict test: org.scala-lang:scala-library
+[debug] :: no conflict test: org.slf4j:slf4j-api
+[debug] :: no conflict test: org.mockito:mockito-core
+[debug] :: no conflict test: org.scalamock:scalamock-core_2.12
+[debug] :: no conflict test: com.typesafe.akka:akka-testkit_2.12
+[debug] :: no conflict test: org.scalatest:scalatest_2.12
+[debug] :: no conflict test: org.scala-lang:scala-reflect
+[debug] :: no conflict test: org.apache.httpcomponents:httpclient
+[debug] :: no conflict test: org.json4s:json4s-ast_2.12
+[debug] :: no conflict test: commons-codec:commons-codec
+[debug] :: no conflict test: org.scala-lang.modules:scala-parser-combinators_2.12
+[debug] :: no conflict test: com.google.code.gson:gson
+[debug] :: no conflict test: org.json4s:json4s-scalap_2.12
+[debug] :: no conflict test: org.objenesis:objenesis
+[debug] :: no conflict test: org.json4s:json4s-native_2.12
+[debug] :: no conflict test: com.typesafe.akka:akka-parsing_2.12
+[debug] :: no conflict test: com.typesafe.akka:akka-protobuf_2.12
+[debug] :: no conflict test: org.scala-sbt:test-interface
+[debug] :: no conflict test: org.scalacheck:scalacheck_2.12
+[debug] :: no conflict test: com.typesafe.akka:akka-http-core_2.12
+[debug] :: no conflict test: org.scalamock:scalamock-scalatest-support_2.12
+[debug] :: no conflict test: org.scala-lang.modules:scala-java8-compat_2.12
+[debug] :: no conflict test: com.typesafe.akka:akka-slf4j_2.12
+[debug] ::: -----------
+[debug] :: provided: loop: List()
+[debug] :: sort result: 
+[debug] ::: -----------
+[debug] :: optional: loop: List()
+[debug] :: sort result: 
+[debug] ::: -----------
+[debug] :: compile-internal: loop: List()
+[debug] :: sort result: com.thoughtworks.paranamer:paranamer, com.typesafe.akka:akka-stream_2.12, com.typesafe.akka:akka-http_2.12, org.json4s:json4s-core_2.12, com.typesafe:config, org.scala-lang.modules:scala-xml_2.12, ch.qos.logback:logback-core, org.reactivestreams:reactive-streams, commons-logging:commons-logging, com.typesafe.akka:akka-actor_2.12, org.apache.httpcomponents:httpcore, ch.qos.logback:logback-classic, com.typesafe:ssl-config-core_2.12, org.scala-lang:scala-library, org.slf4j:slf4j-api, org.apache.httpcomponents:httpclient, org.json4s:json4s-ast_2.12, commons-codec:commons-codec, org.scala-lang.modules:scala-parser-combinators_2.12, com.google.code.gson:gson, org.json4s:json4s-scalap_2.12, org.json4s:json4s-native_2.12, com.typesafe.akka:akka-parsing_2.12, com.typesafe.akka:akka-protobuf_2.12, org.scala-sbt:test-interface, org.scalacheck:scalacheck_2.12, com.typesafe.akka:akka-http-core_2.12, org.scala-lang.modules:scala-java8-compat_2.12, com.typesafe.akka:akka-slf4j_2.12
+[debug] :: no conflict compile-internal: com.thoughtworks.paranamer:paranamer
+[debug] :: no conflict compile-internal: com.typesafe.akka:akka-stream_2.12
+[debug] :: no conflict compile-internal: com.typesafe.akka:akka-http_2.12
+[debug] :: no conflict compile-internal: org.json4s:json4s-core_2.12
+[debug] :: no conflict compile-internal: com.typesafe:config
+[debug] :: no conflict compile-internal: org.scala-lang.modules:scala-xml_2.12
+[debug] :: no conflict compile-internal: ch.qos.logback:logback-core
+[debug] :: no conflict compile-internal: org.reactivestreams:reactive-streams
+[debug] :: no conflict compile-internal: commons-logging:commons-logging
+[debug] :: no conflict compile-internal: com.typesafe.akka:akka-actor_2.12
+[debug] :: no conflict compile-internal: org.apache.httpcomponents:httpcore
+[debug] :: no conflict compile-internal: ch.qos.logback:logback-classic
+[debug] :: no conflict compile-internal: com.typesafe:ssl-config-core_2.12
+[debug] :: no conflict compile-internal: org.scala-lang:scala-library
+[debug] :: no conflict compile-internal: org.slf4j:slf4j-api
+[debug] :: no conflict compile-internal: org.apache.httpcomponents:httpclient
+[debug] :: no conflict compile-internal: org.json4s:json4s-ast_2.12
+[debug] :: no conflict compile-internal: commons-codec:commons-codec
+[debug] :: no conflict compile-internal: org.scala-lang.modules:scala-parser-combinators_2.12
+[debug] :: no conflict compile-internal: com.google.code.gson:gson
+[debug] :: no conflict compile-internal: org.json4s:json4s-scalap_2.12
+[debug] :: no conflict compile-internal: org.json4s:json4s-native_2.12
+[debug] :: no conflict compile-internal: com.typesafe.akka:akka-parsing_2.12
+[debug] :: no conflict compile-internal: com.typesafe.akka:akka-protobuf_2.12
+[debug] :: no conflict compile-internal: org.scala-sbt:test-interface
+[debug] :: no conflict compile-internal: org.scalacheck:scalacheck_2.12
+[debug] :: no conflict compile-internal: com.typesafe.akka:akka-http-core_2.12
+[debug] :: no conflict compile-internal: org.scala-lang.modules:scala-java8-compat_2.12
+[debug] :: no conflict compile-internal: com.typesafe.akka:akka-slf4j_2.12
+[debug] ::: -----------
+[debug] :: runtime-internal: loop: List()
+[debug] :: sort result: com.thoughtworks.paranamer:paranamer, com.typesafe.akka:akka-stream_2.12, com.typesafe.akka:akka-http_2.12, org.json4s:json4s-core_2.12, com.typesafe:config, org.scala-lang.modules:scala-xml_2.12, ch.qos.logback:logback-core, org.reactivestreams:reactive-streams, commons-logging:commons-logging, com.typesafe.akka:akka-actor_2.12, org.apache.httpcomponents:httpcore, ch.qos.logback:logback-classic, com.typesafe:ssl-config-core_2.12, org.scala-lang:scala-library, org.slf4j:slf4j-api, org.apache.httpcomponents:httpclient, org.json4s:json4s-ast_2.12, commons-codec:commons-codec, org.scala-lang.modules:scala-parser-combinators_2.12, com.google.code.gson:gson, org.json4s:json4s-scalap_2.12, org.json4s:json4s-native_2.12, com.typesafe.akka:akka-parsing_2.12, com.typesafe.akka:akka-protobuf_2.12, org.scala-sbt:test-interface, org.scalacheck:scalacheck_2.12, com.typesafe.akka:akka-http-core_2.12, org.scala-lang.modules:scala-java8-compat_2.12, com.typesafe.akka:akka-slf4j_2.12
+[debug] :: no conflict runtime-internal: com.thoughtworks.paranamer:paranamer
+[debug] :: no conflict runtime-internal: com.typesafe.akka:akka-stream_2.12
+[debug] :: no conflict runtime-internal: com.typesafe.akka:akka-http_2.12
+[debug] :: no conflict runtime-internal: org.json4s:json4s-core_2.12
+[debug] :: no conflict runtime-internal: com.typesafe:config
+[debug] :: no conflict runtime-internal: org.scala-lang.modules:scala-xml_2.12
+[debug] :: no conflict runtime-internal: ch.qos.logback:logback-core
+[debug] :: no conflict runtime-internal: org.reactivestreams:reactive-streams
+[debug] :: no conflict runtime-internal: commons-logging:commons-logging
+[debug] :: no conflict runtime-internal: com.typesafe.akka:akka-actor_2.12
+[debug] :: no conflict runtime-internal: org.apache.httpcomponents:httpcore
+[debug] :: no conflict runtime-internal: ch.qos.logback:logback-classic
+[debug] :: no conflict runtime-internal: com.typesafe:ssl-config-core_2.12
+[debug] :: no conflict runtime-internal: org.scala-lang:scala-library
+[debug] :: no conflict runtime-internal: org.slf4j:slf4j-api
+[debug] :: no conflict runtime-internal: org.apache.httpcomponents:httpclient
+[debug] :: no conflict runtime-internal: org.json4s:json4s-ast_2.12
+[debug] :: no conflict runtime-internal: commons-codec:commons-codec
+[debug] :: no conflict runtime-internal: org.scala-lang.modules:scala-parser-combinators_2.12
+[debug] :: no conflict runtime-internal: com.google.code.gson:gson
+[debug] :: no conflict runtime-internal: org.json4s:json4s-scalap_2.12
+[debug] :: no conflict runtime-internal: org.json4s:json4s-native_2.12
+[debug] :: no conflict runtime-internal: com.typesafe.akka:akka-parsing_2.12
+[debug] :: no conflict runtime-internal: com.typesafe.akka:akka-protobuf_2.12
+[debug] :: no conflict runtime-internal: org.scala-sbt:test-interface
+[debug] :: no conflict runtime-internal: org.scalacheck:scalacheck_2.12
+[debug] :: no conflict runtime-internal: com.typesafe.akka:akka-http-core_2.12
+[debug] :: no conflict runtime-internal: org.scala-lang.modules:scala-java8-compat_2.12
+[debug] :: no conflict runtime-internal: com.typesafe.akka:akka-slf4j_2.12
+[debug] ::: -----------
+[debug] :: test-internal: loop: List()
+[debug] :: sort result: com.typesafe.akka:akka-http-testkit_2.12, com.thoughtworks.paranamer:paranamer, org.scalactic:scalactic_2.12, com.typesafe.akka:akka-stream_2.12, org.scoverage:scalac-scoverage-runtime_2.12, com.typesafe.akka:akka-http_2.12, org.json4s:json4s-core_2.12, net.bytebuddy:byte-buddy, com.typesafe:config, net.bytebuddy:byte-buddy-agent, org.scala-lang.modules:scala-xml_2.12, ch.qos.logback:logback-core, org.reactivestreams:reactive-streams, commons-logging:commons-logging, com.typesafe.akka:akka-stream-testkit_2.12, com.typesafe.akka:akka-actor_2.12, org.apache.httpcomponents:httpcore, ch.qos.logback:logback-classic, com.typesafe:ssl-config-core_2.12, org.scala-lang:scala-library, org.slf4j:slf4j-api, org.mockito:mockito-core, org.scalamock:scalamock-core_2.12, com.typesafe.akka:akka-testkit_2.12, org.scalatest:scalatest_2.12, org.scala-lang:scala-reflect, org.apache.httpcomponents:httpclient, org.json4s:json4s-ast_2.12, commons-codec:commons-codec, org.scala-lang.modules:scala-parser-combinators_2.12, com.google.code.gson:gson, org.json4s:json4s-scalap_2.12, org.objenesis:objenesis, org.json4s:json4s-native_2.12, com.typesafe.akka:akka-parsing_2.12, com.typesafe.akka:akka-protobuf_2.12, org.scala-sbt:test-interface, org.scalacheck:scalacheck_2.12, com.typesafe.akka:akka-http-core_2.12, org.scalamock:scalamock-scalatest-support_2.12, org.scala-lang.modules:scala-java8-compat_2.12, com.typesafe.akka:akka-slf4j_2.12
+[debug] :: no conflict test-internal: com.typesafe.akka:akka-http-testkit_2.12
+[debug] :: no conflict test-internal: com.thoughtworks.paranamer:paranamer
+[debug] :: no conflict test-internal: org.scalactic:scalactic_2.12
+[debug] :: no conflict test-internal: com.typesafe.akka:akka-stream_2.12
+[debug] :: no conflict test-internal: org.scoverage:scalac-scoverage-runtime_2.12
+[debug] :: no conflict test-internal: com.typesafe.akka:akka-http_2.12
+[debug] :: no conflict test-internal: org.json4s:json4s-core_2.12
+[debug] :: no conflict test-internal: net.bytebuddy:byte-buddy
+[debug] :: no conflict test-internal: com.typesafe:config
+[debug] :: no conflict test-internal: net.bytebuddy:byte-buddy-agent
+[debug] :: no conflict test-internal: org.scala-lang.modules:scala-xml_2.12
+[debug] :: no conflict test-internal: ch.qos.logback:logback-core
+[debug] :: no conflict test-internal: org.reactivestreams:reactive-streams
+[debug] :: no conflict test-internal: commons-logging:commons-logging
+[debug] :: no conflict test-internal: com.typesafe.akka:akka-stream-testkit_2.12
+[debug] :: no conflict test-internal: com.typesafe.akka:akka-actor_2.12
+[debug] :: no conflict test-internal: org.apache.httpcomponents:httpcore
+[debug] :: no conflict test-internal: ch.qos.logback:logback-classic
+[debug] :: no conflict test-internal: com.typesafe:ssl-config-core_2.12
+[debug] :: no conflict test-internal: org.scala-lang:scala-library
+[debug] :: no conflict test-internal: org.slf4j:slf4j-api
+[debug] :: no conflict test-internal: org.mockito:mockito-core
+[debug] :: no conflict test-internal: org.scalamock:scalamock-core_2.12
+[debug] :: no conflict test-internal: com.typesafe.akka:akka-testkit_2.12
+[debug] :: no conflict test-internal: org.scalatest:scalatest_2.12
+[debug] :: no conflict test-internal: org.scala-lang:scala-reflect
+[debug] :: no conflict test-internal: org.apache.httpcomponents:httpclient
+[debug] :: no conflict test-internal: org.json4s:json4s-ast_2.12
+[debug] :: no conflict test-internal: commons-codec:commons-codec
+[debug] :: no conflict test-internal: org.scala-lang.modules:scala-parser-combinators_2.12
+[debug] :: no conflict test-internal: com.google.code.gson:gson
+[debug] :: no conflict test-internal: org.json4s:json4s-scalap_2.12
+[debug] :: no conflict test-internal: org.objenesis:objenesis
+[debug] :: no conflict test-internal: org.json4s:json4s-native_2.12
+[debug] :: no conflict test-internal: com.typesafe.akka:akka-parsing_2.12
+[debug] :: no conflict test-internal: com.typesafe.akka:akka-protobuf_2.12
+[debug] :: no conflict test-internal: org.scala-sbt:test-interface
+[debug] :: no conflict test-internal: org.scalacheck:scalacheck_2.12
+[debug] :: no conflict test-internal: com.typesafe.akka:akka-http-core_2.12
+[debug] :: no conflict test-internal: org.scalamock:scalamock-scalatest-support_2.12
+[debug] :: no conflict test-internal: org.scala-lang.modules:scala-java8-compat_2.12
+[debug] :: no conflict test-internal: com.typesafe.akka:akka-slf4j_2.12
+[debug] ::: -----------
+[debug] :: plugin: loop: List()
+[debug] :: sort result: 
+[debug] ::: -----------
+[debug] :: sources: loop: List()
+[debug] :: sort result: 
+[debug] ::: -----------
+[debug] :: docs: loop: List()
+[debug] :: sort result: 
+[debug] ::: -----------
+[debug] :: pom: loop: List()
+[debug] :: sort result: 
+[debug] ::: -----------
+[debug] :: scala-tool: loop: List()
+[debug] :: sort result: org.scala-lang:scala-library, org.scala-lang.modules:scala-xml_2.12, org.scala-lang:scala-reflect, jline:jline, org.scala-lang:scala-compiler
+[debug] :: no conflict scala-tool: org.scala-lang:scala-library
+[debug] :: no conflict scala-tool: org.scala-lang.modules:scala-xml_2.12
+[debug] :: no conflict scala-tool: org.scala-lang:scala-reflect
+[debug] :: no conflict scala-tool: jline:jline
+[debug] :: no conflict scala-tool: org.scala-lang:scala-compiler
+[debug] ::: -----------
+[debug] :: scoveragePlugin: loop: List()
+[debug] :: sort result: 

@@ -1,0 +1,335 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          com\accounts\marshallers\Json4sMarshaller.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package com.accounts.marshallers
+</span>2 <span style=''>
+</span>3 <span style=''>import akka.http.scaladsl.model.MediaTypes.`application/json`
+</span>4 <span style=''>import akka.http.scaladsl.model.StatusCodes
+</span>5 <span style=''>import akka.http.scaladsl.unmarshalling.{FromEntityUnmarshaller, Unmarshaller}
+</span>6 <span style=''>import com.google.gson.JsonParser
+</span>7 <span style=''>import org.json4s.{Formats, Serialization}
+</span>8 <span style=''>
+</span>9 <span style=''>
+</span>10 <span style=''>object Json4sMarshaller extends Json4sMarshaller {
+</span>11 <span style=''>}
+</span>12 <span style=''>
+</span>13 <span style=''>trait Json4sMarshaller {
+</span>14 <span style=''>  implicit def unmarshaller[A: Manifest](implicit serialization: Serialization, formats: Formats): FromEntityUnmarshaller[A] =
+</span>15 <span style=''>    </span><span style='background: #AEF1AE'>Unmarshaller
+</span>16 <span style=''></span><span style='background: #AEF1AE'>      .byteStringUnmarshaller
+</span>17 <span style=''></span><span style='background: #AEF1AE'>      .forContentTypes(`application/json`)
+</span>18 <span style=''></span><span style='background: #AEF1AE'>      .mapWithCharset((data, charset) =&gt;
+</span>19 <span style=''></span><span style='background: #AEF1AE'>        try {
+</span>20 <span style=''></span><span style='background: #AEF1AE'>          val dataString = data.decodeString(charset.nioCharset.name)
+</span>21 <span style=''></span><span style='background: #AEF1AE'>          new JsonParser().parse(dataString)
+</span>22 <span style=''></span><span style='background: #AEF1AE'>          serialization.read(dataString)
+</span>23 <span style=''></span><span style='background: #AEF1AE'>        } catch {
+</span>24 <span style=''></span><span style='background: #AEF1AE'>          case e: Throwable =&gt;
+</span>25 <span style=''></span><span style='background: #AEF1AE'>            </span><span style='background: #F0ADAD'>e.printStackTrace()</span><span style='background: #AEF1AE'>
+</span>26 <span style=''></span><span style='background: #AEF1AE'>            </span><span style='background: #F0ADAD'>throw new IllegalArgumentException(StatusCodes.BadRequest.defaultMessage)</span><span style='background: #AEF1AE'>
+</span>27 <span style=''></span><span style='background: #AEF1AE'>
+</span>28 <span style=''></span><span style='background: #AEF1AE'>        })</span><span style=''>
+</span>29 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          172
+        </td>
+        <td>
+          522
+          -
+          565
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          akka.http.scaladsl.unmarshalling.PredefinedFromEntityUnmarshallers.byteStringUnmarshaller
+        </td>
+        <td style="background: #AEF1AE">
+          akka.http.scaladsl.unmarshalling.Unmarshaller.byteStringUnmarshaller
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          173
+        </td>
+        <td>
+          590
+          -
+          608
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          akka.http.scaladsl.model.MediaTypes.application/json
+        </td>
+        <td style="background: #AEF1AE">
+          akka.http.scaladsl.model.MediaTypes.application/json
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          175
+        </td>
+        <td>
+          522
+          -
+          609
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.http.scaladsl.unmarshalling.Unmarshaller.EnhancedFromEntityUnmarshaller.forContentTypes
+        </td>
+        <td style="background: #AEF1AE">
+          unmarshalling.this.Unmarshaller.EnhancedFromEntityUnmarshaller[akka.util.ByteString](akka.http.scaladsl.unmarshalling.Unmarshaller.byteStringUnmarshaller).forContentTypes(model.this.ContentTypeRange.apply(akka.http.scaladsl.model.MediaTypes.application/json))
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          174
+        </td>
+        <td>
+          590
+          -
+          608
+        </td>
+        <td>
+          ApplyImplicitView
+        </td>
+        <td>
+          akka.http.scaladsl.model.ContentTypeRange.apply
+        </td>
+        <td style="background: #AEF1AE">
+          model.this.ContentTypeRange.apply(akka.http.scaladsl.model.MediaTypes.application/json)
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          183
+        </td>
+        <td>
+          522
+          -
+          1010
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.http.scaladsl.unmarshalling.Unmarshaller.EnhancedFromEntityUnmarshaller.mapWithCharset
+        </td>
+        <td style="background: #AEF1AE">
+          unmarshalling.this.Unmarshaller.EnhancedFromEntityUnmarshaller[akka.util.ByteString](unmarshalling.this.Unmarshaller.EnhancedFromEntityUnmarshaller[akka.util.ByteString](akka.http.scaladsl.unmarshalling.Unmarshaller.byteStringUnmarshaller).forContentTypes(model.this.ContentTypeRange.apply(akka.http.scaladsl.model.MediaTypes.application/json))).mapWithCharset[A](((data: akka.util.ByteString, charset: akka.http.scaladsl.model.HttpCharset) =&gt; try {
+  val dataString: String = data.decodeString(charset.nioCharset().name());
+  new com.google.gson.JsonParser().parse(dataString);
+  serialization.read[A](dataString)(formats, evidence$1)
+} catch {
+  case (e @ (_: Throwable)) =&gt; {
+    e.printStackTrace();
+    throw new scala.`package`.IllegalArgumentException(akka.http.scaladsl.model.StatusCodes.BadRequest.defaultMessage)
+  }
+}))
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          180
+        </td>
+        <td>
+          678
+          -
+          825
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          {
+  val dataString: String = data.decodeString(charset.nioCharset().name());
+  new com.google.gson.JsonParser().parse(dataString);
+  serialization.read[A](dataString)(formats, evidence$1)
+}
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          176
+        </td>
+        <td>
+          713
+          -
+          736
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.nio.charset.Charset.name
+        </td>
+        <td style="background: #AEF1AE">
+          charset.nioCharset().name()
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          177
+        </td>
+        <td>
+          695
+          -
+          737
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.util.ByteString.decodeString
+        </td>
+        <td style="background: #AEF1AE">
+          data.decodeString(charset.nioCharset().name())
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          178
+        </td>
+        <td>
+          749
+          -
+          783
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.google.gson.JsonParser.parse
+        </td>
+        <td style="background: #AEF1AE">
+          new com.google.gson.JsonParser().parse(dataString)
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          179
+        </td>
+        <td>
+          795
+          -
+          825
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          org.json4s.Serialization.read
+        </td>
+        <td style="background: #AEF1AE">
+          serialization.read[A](dataString)(formats, evidence$1)
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          181
+        </td>
+        <td>
+          890
+          -
+          909
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.Throwable.printStackTrace
+        </td>
+        <td style="background: #F0ADAD">
+          e.printStackTrace()
+        </td>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          182
+        </td>
+        <td>
+          923
+          -
+          996
+        </td>
+        <td>
+          Throw
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          throw new scala.`package`.IllegalArgumentException(akka.http.scaladsl.model.StatusCodes.BadRequest.defaultMessage)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

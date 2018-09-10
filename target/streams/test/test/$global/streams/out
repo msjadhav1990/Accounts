@@ -1,0 +1,23 @@
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.accounts.handler.AccountsHandlerTests, org.scalatest.tools.Framework$$anon$1@4dd8a291, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.accounts.storage.CustomerInfoDatabaseTests, org.scalatest.tools.Framework$$anon$1@4dd8a291, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.accounts.http.RawHttpExecutorTests, org.scalatest.tools.Framework$$anon$1@4dd8a291, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.accounts.actors.AccountsActorTests, org.scalatest.tools.Framework$$anon$1@4dd8a291, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.accounts.http.TransActionManagerTests, org.scalatest.tools.Framework$$anon$1@4dd8a291, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.accounts.routes.AccountsRoutesTests, org.scalatest.tools.Framework$$anon$1@4dd8a291, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(com.accounts.config.ServiceConfigurationTests, org.scalatest.tools.Framework$$anon$1@4dd8a291, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mSummary for ScalaCheck not available.[0m
+[0m[[0minfo[0m] [0mScalaTest[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 4 seconds, 589 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 30[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 7, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 30, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[32mAll tests passed.[0m[0m
+[0m[[0minfo[0m] [0mPassed: Total 30, Failed 0, Errors 0, Passed 30[0m
+[0m[[0mdebug[0m] [0mPassed tests:[0m
+[0m[[0mdebug[0m] [0m	com.accounts.config.ServiceConfigurationTests[0m
+[0m[[0mdebug[0m] [0m	com.accounts.http.TransActionManagerTests[0m
+[0m[[0mdebug[0m] [0m	com.accounts.actors.AccountsActorTests[0m
+[0m[[0mdebug[0m] [0m	com.accounts.routes.AccountsRoutesTests[0m
+[0m[[0mdebug[0m] [0m	com.accounts.storage.CustomerInfoDatabaseTests[0m
+[0m[[0mdebug[0m] [0m	com.accounts.handler.AccountsHandlerTests[0m
+[0m[[0mdebug[0m] [0m	com.accounts.http.RawHttpExecutorTests[0m

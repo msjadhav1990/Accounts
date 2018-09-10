@@ -1,0 +1,1180 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          com\accounts\storage\CustomerInfoDatabase.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package com.accounts.storage
+</span>2 <span style=''>
+</span>3 <span style=''>import java.util.Date
+</span>4 <span style=''>
+</span>5 <span style=''>import com.accounts.domain.{AccountDetail, CreateLinkedAccount, CustomerInformation}
+</span>6 <span style=''>
+</span>7 <span style=''>import scala.collection.mutable
+</span>8 <span style=''>
+</span>9 <span style=''>
+</span>10 <span style=''>class CustomerInfoDatabase {
+</span>11 <span style=''>
+</span>12 <span style=''>  private var customerInfo: mutable.Map[Long,CustomerInformation]= </span><span style='background: #AEF1AE'>mutable.HashMap.empty</span><span style=''>
+</span>13 <span style=''>
+</span>14 <span style=''>private def init(): Unit ={
+</span>15 <span style=''>
+</span>16 <span style=''>  val cust1= </span><span style='background: #AEF1AE'>CustomerInformation(1, &quot;Mahesh&quot;,&quot;Jadhav&quot;, new Date(), new Date(),mutable.ListBuffer.empty[AccountDetail])</span><span style=''>
+</span>17 <span style=''>  val cust2= </span><span style='background: #AEF1AE'>CustomerInformation(2, &quot;Dinesh&quot;,&quot;Bhujari&quot;, new Date(), new Date(),mutable.ListBuffer.empty[AccountDetail])</span><span style=''>
+</span>18 <span style=''>  val cust3= </span><span style='background: #AEF1AE'>CustomerInformation(3, &quot;Amit&quot;,&quot;Kulkarni&quot;, new Date(), new Date(),mutable.ListBuffer.empty[AccountDetail])</span><span style=''>
+</span>19 <span style=''>  val cust4= </span><span style='background: #AEF1AE'>CustomerInformation(4, &quot;Siddarth&quot;,&quot;Ananad&quot;, new Date(), new Date(),mutable.ListBuffer.empty[AccountDetail])</span><span style=''>
+</span>20 <span style=''>  </span><span style='background: #AEF1AE'>customerInfo.put(cust1.custiId,cust1)</span><span style=''>
+</span>21 <span style=''>  </span><span style='background: #AEF1AE'>customerInfo.put(cust2.custiId,cust2)</span><span style=''>
+</span>22 <span style=''>  </span><span style='background: #AEF1AE'>customerInfo.put(cust3.custiId,cust3)</span><span style=''>
+</span>23 <span style=''>  </span><span style='background: #AEF1AE'>customerInfo.put(cust4.custiId,cust4)</span><span style=''>
+</span>24 <span style=''>}
+</span>25 <span style=''>  </span><span style='background: #AEF1AE'>init()</span><span style=''>
+</span>26 <span style=''>
+</span>27 <span style=''>  def createAccount(createLinkedAccount: CreateLinkedAccount): Option[AccountDetail] ={
+</span>28 <span style=''>
+</span>29 <span style=''>    </span><span style='background: #AEF1AE'>customerInfo.get(createLinkedAccount.custId)</span><span style=''> match {
+</span>30 <span style=''>      case None =&gt; </span><span style='background: #AEF1AE'>None</span><span style=''>
+</span>31 <span style=''>      case Some(custInfo)=&gt;
+</span>32 <span style=''>        val accountDetails= </span><span style='background: #AEF1AE'>AccountDetail(((custInfo.custiId * 100) + custInfo.account.size), new Date(),true)</span><span style=''>
+</span>33 <span style=''>        </span><span style='background: #AEF1AE'>custInfo.account.append(accountDetails)</span><span style=''>
+</span>34 <span style=''>        </span><span style='background: #AEF1AE'>Some(accountDetails)</span><span style=''>
+</span>35 <span style=''>
+</span>36 <span style=''>    }
+</span>37 <span style=''>
+</span>38 <span style=''>  }
+</span>39 <span style=''>  def getCustomerDetails(custId:Long): Option[CustomerInformation] ={
+</span>40 <span style=''>    </span><span style='background: #AEF1AE'>customerInfo.get(custId)</span><span style=''>
+</span>41 <span style=''>  }
+</span>42 <span style=''>
+</span>43 <span style=''>  def checkCustomerId(custId:Long):Boolean={
+</span>44 <span style=''>  </span><span style='background: #AEF1AE'>customerInfo.contains(custId)</span><span style=''>
+</span>45 <span style=''>  }
+</span>46 <span style=''>
+</span>47 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          339
+        </td>
+        <td>
+          281
+          -
+          302
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.collection.mutable.HashMap.empty
+        </td>
+        <td style="background: #AEF1AE">
+          scala.collection.mutable.HashMap.empty[Long, com.accounts.domain.CustomerInformation]
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          346
+        </td>
+        <td>
+          350
+          -
+          455
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.domain.CustomerInformation.apply
+        </td>
+        <td style="background: #AEF1AE">
+          com.accounts.domain.CustomerInformation.apply(1L, &quot;Mahesh&quot;, &quot;Jadhav&quot;, new java.util.Date(), new java.util.Date(), scala.collection.mutable.ListBuffer.empty[com.accounts.domain.AccountDetail])
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          340
+        </td>
+        <td>
+          370
+          -
+          371
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          1L
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          343
+        </td>
+        <td>
+          392
+          -
+          402
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.util.Date.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new java.util.Date()
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          345
+        </td>
+        <td>
+          415
+          -
+          454
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.collection.generic.GenericCompanion.empty
+        </td>
+        <td style="background: #AEF1AE">
+          scala.collection.mutable.ListBuffer.empty[com.accounts.domain.AccountDetail]
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          342
+        </td>
+        <td>
+          382
+          -
+          390
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;Jadhav&quot;
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          341
+        </td>
+        <td>
+          373
+          -
+          381
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;Mahesh&quot;
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          344
+        </td>
+        <td>
+          404
+          -
+          414
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.util.Date.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new java.util.Date()
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          349
+        </td>
+        <td>
+          502
+          -
+          511
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;Bhujari&quot;
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          352
+        </td>
+        <td>
+          536
+          -
+          575
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.collection.generic.GenericCompanion.empty
+        </td>
+        <td style="background: #AEF1AE">
+          scala.collection.mutable.ListBuffer.empty[com.accounts.domain.AccountDetail]
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          348
+        </td>
+        <td>
+          493
+          -
+          501
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;Dinesh&quot;
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          351
+        </td>
+        <td>
+          525
+          -
+          535
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.util.Date.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new java.util.Date()
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          350
+        </td>
+        <td>
+          513
+          -
+          523
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.util.Date.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new java.util.Date()
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          353
+        </td>
+        <td>
+          470
+          -
+          576
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.domain.CustomerInformation.apply
+        </td>
+        <td style="background: #AEF1AE">
+          com.accounts.domain.CustomerInformation.apply(2L, &quot;Dinesh&quot;, &quot;Bhujari&quot;, new java.util.Date(), new java.util.Date(), scala.collection.mutable.ListBuffer.empty[com.accounts.domain.AccountDetail])
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          347
+        </td>
+        <td>
+          490
+          -
+          491
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          2L
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          355
+        </td>
+        <td>
+          614
+          -
+          620
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;Amit&quot;
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          358
+        </td>
+        <td>
+          645
+          -
+          655
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.util.Date.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new java.util.Date()
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          360
+        </td>
+        <td>
+          591
+          -
+          696
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.domain.CustomerInformation.apply
+        </td>
+        <td style="background: #AEF1AE">
+          com.accounts.domain.CustomerInformation.apply(3L, &quot;Amit&quot;, &quot;Kulkarni&quot;, new java.util.Date(), new java.util.Date(), scala.collection.mutable.ListBuffer.empty[com.accounts.domain.AccountDetail])
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          354
+        </td>
+        <td>
+          611
+          -
+          612
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          3L
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          357
+        </td>
+        <td>
+          633
+          -
+          643
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.util.Date.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new java.util.Date()
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          359
+        </td>
+        <td>
+          656
+          -
+          695
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.collection.generic.GenericCompanion.empty
+        </td>
+        <td style="background: #AEF1AE">
+          scala.collection.mutable.ListBuffer.empty[com.accounts.domain.AccountDetail]
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          356
+        </td>
+        <td>
+          621
+          -
+          631
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;Kulkarni&quot;
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          364
+        </td>
+        <td>
+          755
+          -
+          765
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.util.Date.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new java.util.Date()
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          367
+        </td>
+        <td>
+          711
+          -
+          818
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.domain.CustomerInformation.apply
+        </td>
+        <td style="background: #AEF1AE">
+          com.accounts.domain.CustomerInformation.apply(4L, &quot;Siddarth&quot;, &quot;Ananad&quot;, new java.util.Date(), new java.util.Date(), scala.collection.mutable.ListBuffer.empty[com.accounts.domain.AccountDetail])
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          361
+        </td>
+        <td>
+          731
+          -
+          732
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          4L
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          363
+        </td>
+        <td>
+          745
+          -
+          753
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;Ananad&quot;
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          366
+        </td>
+        <td>
+          778
+          -
+          817
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.collection.generic.GenericCompanion.empty
+        </td>
+        <td style="background: #AEF1AE">
+          scala.collection.mutable.ListBuffer.empty[com.accounts.domain.AccountDetail]
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          362
+        </td>
+        <td>
+          734
+          -
+          744
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;Siddarth&quot;
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          365
+        </td>
+        <td>
+          767
+          -
+          777
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.util.Date.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new java.util.Date()
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          369
+        </td>
+        <td>
+          822
+          -
+          859
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.MapLike.put
+        </td>
+        <td style="background: #AEF1AE">
+          CustomerInfoDatabase.this.customerInfo.put(cust1.custiId, cust1)
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          368
+        </td>
+        <td>
+          839
+          -
+          852
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.domain.CustomerInformation.custiId
+        </td>
+        <td style="background: #AEF1AE">
+          cust1.custiId
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          370
+        </td>
+        <td>
+          880
+          -
+          893
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.domain.CustomerInformation.custiId
+        </td>
+        <td style="background: #AEF1AE">
+          cust2.custiId
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          371
+        </td>
+        <td>
+          863
+          -
+          900
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.MapLike.put
+        </td>
+        <td style="background: #AEF1AE">
+          CustomerInfoDatabase.this.customerInfo.put(cust2.custiId, cust2)
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          373
+        </td>
+        <td>
+          904
+          -
+          941
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.MapLike.put
+        </td>
+        <td style="background: #AEF1AE">
+          CustomerInfoDatabase.this.customerInfo.put(cust3.custiId, cust3)
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          372
+        </td>
+        <td>
+          921
+          -
+          934
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.domain.CustomerInformation.custiId
+        </td>
+        <td style="background: #AEF1AE">
+          cust3.custiId
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          376
+        </td>
+        <td>
+          961
+          -
+          961
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          ()
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          375
+        </td>
+        <td>
+          945
+          -
+          982
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.MapLike.put
+        </td>
+        <td style="background: #AEF1AE">
+          CustomerInfoDatabase.this.customerInfo.put(cust4.custiId, cust4)
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          374
+        </td>
+        <td>
+          962
+          -
+          975
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.domain.CustomerInformation.custiId
+        </td>
+        <td style="background: #AEF1AE">
+          cust4.custiId
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          377
+        </td>
+        <td>
+          989
+          -
+          995
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.storage.CustomerInfoDatabase.init
+        </td>
+        <td style="background: #AEF1AE">
+          CustomerInfoDatabase.this.init()
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          379
+        </td>
+        <td>
+          1094
+          -
+          1138
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.MapLike.get
+        </td>
+        <td style="background: #AEF1AE">
+          CustomerInfoDatabase.this.customerInfo.get(createLinkedAccount.custId)
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          378
+        </td>
+        <td>
+          1111
+          -
+          1137
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.domain.CreateLinkedAccount.custId
+        </td>
+        <td style="background: #AEF1AE">
+          createLinkedAccount.custId
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          380
+        </td>
+        <td>
+          1167
+          -
+          1171
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.None
+        </td>
+        <td style="background: #AEF1AE">
+          scala.None
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          382
+        </td>
+        <td>
+          1272
+          -
+          1293
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.size
+        </td>
+        <td style="background: #AEF1AE">
+          custInfo.account.size
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          385
+        </td>
+        <td>
+          1307
+          -
+          1311
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          true
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          381
+        </td>
+        <td>
+          1265
+          -
+          1268
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          100
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          384
+        </td>
+        <td>
+          1296
+          -
+          1306
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.util.Date.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new java.util.Date()
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          383
+        </td>
+        <td>
+          1245
+          -
+          1293
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Long.+
+        </td>
+        <td style="background: #AEF1AE">
+          custInfo.custiId.*(100).+(custInfo.account.size)
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          386
+        </td>
+        <td>
+          1230
+          -
+          1312
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.domain.AccountDetail.apply
+        </td>
+        <td style="background: #AEF1AE">
+          com.accounts.domain.AccountDetail.apply(custInfo.custiId.*(100).+(custInfo.account.size), new java.util.Date(), true)
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          387
+        </td>
+        <td>
+          1322
+          -
+          1361
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.BufferLike.append
+        </td>
+        <td style="background: #AEF1AE">
+          custInfo.account.append(accountDetails)
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          388
+        </td>
+        <td>
+          1371
+          -
+          1391
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Some.apply[com.accounts.domain.AccountDetail](accountDetails)
+        </td>
+      </tr><tr>
+        <td>
+          40
+        </td>
+        <td>
+          389
+        </td>
+        <td>
+          1484
+          -
+          1508
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.MapLike.get
+        </td>
+        <td style="background: #AEF1AE">
+          CustomerInfoDatabase.this.customerInfo.get(custId)
+        </td>
+      </tr><tr>
+        <td>
+          44
+        </td>
+        <td>
+          390
+        </td>
+        <td>
+          1565
+          -
+          1594
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.MapLike.contains
+        </td>
+        <td style="background: #AEF1AE">
+          CustomerInfoDatabase.this.customerInfo.contains(custId)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

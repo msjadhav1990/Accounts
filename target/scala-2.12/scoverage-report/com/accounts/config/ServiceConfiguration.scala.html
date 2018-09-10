@@ -1,0 +1,246 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          com\accounts\config\ServiceConfiguration.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package com.accounts.config
+</span>2 <span style=''>
+</span>3 <span style=''>import com.typesafe.config.Config
+</span>4 <span style=''>
+</span>5 <span style=''>case class HttpConfiguration(hostname: String, port: Int, uri: String)
+</span>6 <span style=''>object HttpConfiguration{
+</span>7 <span style=''>  def apply(prefix: String, conf: Config): HttpConfiguration = </span><span style='background: #AEF1AE'>HttpConfiguration(
+</span>8 <span style=''></span><span style='background: #AEF1AE'>    conf.getString(s&quot;$prefix.hostname&quot;),
+</span>9 <span style=''></span><span style='background: #AEF1AE'>    conf.getInt(s&quot;$prefix.port&quot;),
+</span>10 <span style=''></span><span style='background: #AEF1AE'>    conf.getString(s&quot;$prefix.createuri&quot;))</span><span style=''>
+</span>11 <span style=''>}
+</span>12 <span style=''>case class ServiceConfiguration (txServiceConfig:HttpConfiguration)
+</span>13 <span style=''>object ServiceConfiguration{
+</span>14 <span style=''>  def apply(conf: Config):ServiceConfiguration=</span><span style='background: #AEF1AE'>ServiceConfiguration(HttpConfiguration(&quot;txService&quot;,conf)
+</span>15 <span style=''></span><span style='background: #AEF1AE'>  )</span><span style=''>
+</span>16 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          7
+        </td>
+        <td>
+          86
+        </td>
+        <td>
+          230
+          -
+          368
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.config.HttpConfiguration.apply
+        </td>
+        <td style="background: #AEF1AE">
+          HttpConfiguration.apply(conf.getString(scala.StringContext.apply(&quot;&quot;, &quot;.hostname&quot;).s(prefix)), conf.getInt(scala.StringContext.apply(&quot;&quot;, &quot;.port&quot;).s(prefix)), conf.getString(scala.StringContext.apply(&quot;&quot;, &quot;.createuri&quot;).s(prefix)))
+        </td>
+      </tr><tr>
+        <td>
+          8
+        </td>
+        <td>
+          80
+        </td>
+        <td>
+          269
+          -
+          288
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.StringContext.s
+        </td>
+        <td style="background: #AEF1AE">
+          scala.StringContext.apply(&quot;&quot;, &quot;.hostname&quot;).s(prefix)
+        </td>
+      </tr><tr>
+        <td>
+          8
+        </td>
+        <td>
+          81
+        </td>
+        <td>
+          254
+          -
+          289
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.typesafe.config.Config.getString
+        </td>
+        <td style="background: #AEF1AE">
+          conf.getString(scala.StringContext.apply(&quot;&quot;, &quot;.hostname&quot;).s(prefix))
+        </td>
+      </tr><tr>
+        <td>
+          9
+        </td>
+        <td>
+          83
+        </td>
+        <td>
+          296
+          -
+          324
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.typesafe.config.Config.getInt
+        </td>
+        <td style="background: #AEF1AE">
+          conf.getInt(scala.StringContext.apply(&quot;&quot;, &quot;.port&quot;).s(prefix))
+        </td>
+      </tr><tr>
+        <td>
+          9
+        </td>
+        <td>
+          82
+        </td>
+        <td>
+          308
+          -
+          323
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.StringContext.s
+        </td>
+        <td style="background: #AEF1AE">
+          scala.StringContext.apply(&quot;&quot;, &quot;.port&quot;).s(prefix)
+        </td>
+      </tr><tr>
+        <td>
+          10
+        </td>
+        <td>
+          85
+        </td>
+        <td>
+          331
+          -
+          367
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.typesafe.config.Config.getString
+        </td>
+        <td style="background: #AEF1AE">
+          conf.getString(scala.StringContext.apply(&quot;&quot;, &quot;.createuri&quot;).s(prefix))
+        </td>
+      </tr><tr>
+        <td>
+          10
+        </td>
+        <td>
+          84
+        </td>
+        <td>
+          346
+          -
+          366
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.StringContext.s
+        </td>
+        <td style="background: #AEF1AE">
+          scala.StringContext.apply(&quot;&quot;, &quot;.createuri&quot;).s(prefix)
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          88
+        </td>
+        <td>
+          519
+          -
+          580
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.config.ServiceConfiguration.apply
+        </td>
+        <td style="background: #AEF1AE">
+          ServiceConfiguration.apply(HttpConfiguration.apply(&quot;txService&quot;, conf))
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          87
+        </td>
+        <td>
+          540
+          -
+          575
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.config.HttpConfiguration.apply
+        </td>
+        <td style="background: #AEF1AE">
+          HttpConfiguration.apply(&quot;txService&quot;, conf)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

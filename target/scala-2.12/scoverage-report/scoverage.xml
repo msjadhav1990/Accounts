@@ -1,0 +1,1586 @@
+<scoverage 
+statement-count="390" statements-invoked="268" statement-rate="68.72" branch-rate="100.00" version="1.0" timestamp="1536414214305">
+    <packages>
+        <package name="&lt;empty&gt;" statement-count="28" statements-invoked="0" statement-rate="0.00">
+            <classes>
+                <class 
+                name="AccountsServiceApp" filename="AccountsServiceApp.scala" statement-count="8" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                    <methods>
+                        <method 
+                        name="&lt;empty&gt;/AccountsServiceApp/start" statement-count="8" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="&lt;empty&gt;" class="AccountsServiceApp" class-type="Object" full-class-name="AccountsServiceApp" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\AccountsServiceApp.scala" method="start" start="882" end="991" line="23" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="AccountsServiceApp" class-type="Object" full-class-name="AccountsServiceApp" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\AccountsServiceApp.scala" method="start" start="641" end="674" line="18" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="AccountsServiceApp" class-type="Object" full-class-name="AccountsServiceApp" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\AccountsServiceApp.scala" method="start" start="842" end="859" line="21" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="AccountsServiceApp" class-type="Object" full-class-name="AccountsServiceApp" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\AccountsServiceApp.scala" method="start" start="777" end="803" line="20" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="AccountsServiceApp" class-type="Object" full-class-name="AccountsServiceApp" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\AccountsServiceApp.scala" method="start" start="827" end="876" line="21" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="AccountsServiceApp" class-type="Object" full-class-name="AccountsServiceApp" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\AccountsServiceApp.scala" method="start" start="597" end="623" line="17" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="AccountsServiceApp" class-type="Object" full-class-name="AccountsServiceApp" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\AccountsServiceApp.scala" method="start" start="710" end="738" line="19" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="AccountsServiceApp" class-type="Object" full-class-name="AccountsServiceApp" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\AccountsServiceApp.scala" method="start" start="861" end="875" line="21" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="Application" filename="Application.scala" statement-count="20" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                    <methods>
+                        <method 
+                        name="&lt;empty&gt;/Application/&lt;none&gt;" statement-count="20" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="673" end="684" line="22" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="516" end="535" line="18" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="738" end="757" line="25" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="391" end="423" line="16" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="567" end="567" line="19" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="516" end="516" line="18" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="459" end="489" line="17" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="624" end="649" line="21" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="533" end="533" line="18" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="661" end="685" line="22" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="325" end="329" line="12" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="567" end="567" line="19" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="543" end="836" line="19" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="581" end="581" line="19" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="281" end="285" line="11" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="567" end="567" line="19" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="642" end="649" line="21" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="361" end="424" line="16" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="516" end="516" line="18" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="&lt;empty&gt;" class="Application" class-type="Object" full-class-name="Application" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\Application.scala" method="&lt;none&gt;" start="668" end="685" line="22" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+        <package name="com.accounts.actors" statement-count="51" statements-invoked="22" statement-rate="43.14">
+            <classes>
+                <class 
+                name="com.accounts.actors.RouterActor" filename="com\accounts\actors\RouterActor.scala" statement-count="29" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.actors/RouterActor/receive" statement-count="10" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Class" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="receive" start="697" end="759" line="14" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Class" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="receive" start="788" end="788" line="16" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Class" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="receive" start="688" end="694" line="14" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Class" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="receive" start="619" end="619" line="12" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Class" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="receive" start="647" end="810" line="15" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Class" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="receive" start="741" end="758" line="14" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Class" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="receive" start="688" end="759" line="14" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Class" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="receive" start="695" end="695" line="14" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Class" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="receive" start="784" end="803" line="16" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Class" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="receive" start="717" end="739" line="14" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.actors/RouterActor/&lt;none&gt;" statement-count="6" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Class" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="&lt;none&gt;" start="567" end="567" line="11" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Class" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="&lt;none&gt;" start="536" end="583" line="11" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Class" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="&lt;none&gt;" start="567" end="567" line="11" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Class" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="&lt;none&gt;" start="555" end="582" line="11" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Object" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="&lt;none&gt;" start="873" end="901" line="23" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Class" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="&lt;none&gt;" start="567" end="567" line="11" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.actors/RouterActor/props" statement-count="2" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Object" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="props" start="969" end="993" line="24" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Object" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="props" start="975" end="992" line="24" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.actors/RouterActor/resolveFromCache" statement-count="8" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Object" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="resolveFromCache" start="1587" end="1615" line="37" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Object" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="resolveFromCache" start="1569" end="1576" line="36" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Object" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="resolveFromCache" start="1504" end="1513" line="34" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Object" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="resolveFromCache" start="1601" end="1615" line="37" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Object" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="resolveFromCache" start="1625" end="1634" line="38" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Object" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="resolveFromCache" start="1587" end="1615" line="37" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Object" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="resolveFromCache" start="1447" end="1470" line="33" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Object" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="resolveFromCache" start="1553" end="1577" line="36" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.actors/RouterActor/defaultResolver" statement-count="3" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Object" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="defaultResolver" start="1310" end="1314" line="29" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Object" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="defaultResolver" start="1246" end="1294" line="28" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="RouterActor" class-type="Object" full-class-name="com.accounts.actors.RouterActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\RouterActor.scala" method="defaultResolver" start="1156" end="1204" line="27" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="com.accounts.actors.AccountsActor" filename="com\accounts\actors\AccountsActor.scala" statement-count="22" statements-invoked="22" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.actors/AccountsActor/props" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Object" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="props" start="832" end="858" line="30" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Object" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="props" start="838" end="857" line="30" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.actors/AccountsActor/receive" statement-count="20" statements-invoked="20" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="509" end="509" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="672" end="672" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="518" end="518" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="703" end="716" line="22" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="466" end="472" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="617" end="623" line="20" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="688" end="688" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="631" end="726" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="647" end="647" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="509" end="509" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="713" end="713" line="22" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="533" end="546" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="518" end="518" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="688" end="688" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="480" end="556" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="403" end="403" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="496" end="496" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="673" end="683" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="672" end="672" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.actors" class="AccountsActor" class-type="Class" full-class-name="com.accounts.actors.AccountsActor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\actors\AccountsActor.scala" method="receive" start="543" end="543" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+        <package name="com.accounts.config" statement-count="9" statements-invoked="9" statement-rate="100.00">
+            <classes>
+                <class 
+                name="com.accounts.config.HttpConfiguration" filename="com\accounts\config\ServiceConfiguration.scala" statement-count="7" statements-invoked="7" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.config/HttpConfiguration/apply" statement-count="7" statements-invoked="7" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.config" class="HttpConfiguration" class-type="Object" full-class-name="com.accounts.config.HttpConfiguration" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\config\ServiceConfiguration.scala" method="apply" start="296" end="324" line="9" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.config" class="HttpConfiguration" class-type="Object" full-class-name="com.accounts.config.HttpConfiguration" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\config\ServiceConfiguration.scala" method="apply" start="230" end="368" line="7" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.config" class="HttpConfiguration" class-type="Object" full-class-name="com.accounts.config.HttpConfiguration" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\config\ServiceConfiguration.scala" method="apply" start="269" end="288" line="8" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.config" class="HttpConfiguration" class-type="Object" full-class-name="com.accounts.config.HttpConfiguration" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\config\ServiceConfiguration.scala" method="apply" start="308" end="323" line="9" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.config" class="HttpConfiguration" class-type="Object" full-class-name="com.accounts.config.HttpConfiguration" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\config\ServiceConfiguration.scala" method="apply" start="331" end="367" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.config" class="HttpConfiguration" class-type="Object" full-class-name="com.accounts.config.HttpConfiguration" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\config\ServiceConfiguration.scala" method="apply" start="254" end="289" line="8" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.config" class="HttpConfiguration" class-type="Object" full-class-name="com.accounts.config.HttpConfiguration" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\config\ServiceConfiguration.scala" method="apply" start="346" end="366" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="com.accounts.config.ServiceConfiguration" filename="com\accounts\config\ServiceConfiguration.scala" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.config/ServiceConfiguration/apply" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.config" class="ServiceConfiguration" class-type="Object" full-class-name="com.accounts.config.ServiceConfiguration" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\config\ServiceConfiguration.scala" method="apply" start="519" end="580" line="14" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.config" class="ServiceConfiguration" class-type="Object" full-class-name="com.accounts.config.ServiceConfiguration" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\config\ServiceConfiguration.scala" method="apply" start="540" end="575" line="14" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+        <package name="com.accounts.domain" statement-count="24" statements-invoked="10" statement-rate="41.67">
+            <classes>
+                <class 
+                name="com.accounts.domain.TransactionResponse" filename="com\accounts\domain\TransactionResponse.scala" statement-count="4" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.domain/TransactionResponse/toJson" statement-count="2" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.domain" class="TransactionResponse" class-type="Class" full-class-name="com.accounts.domain.TransactionResponse" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\TransactionResponse.scala" method="toJson" start="296" end="321" line="10" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.domain" class="TransactionResponse" class-type="Class" full-class-name="com.accounts.domain.TransactionResponse" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\TransactionResponse.scala" method="toJson" start="315" end="315" line="10" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.domain/TransactionResponse/&lt;none&gt;" statement-count="2" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.domain" class="TransactionResponse" class-type="Class" full-class-name="com.accounts.domain.TransactionResponse" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\TransactionResponse.scala" method="&lt;none&gt;" start="236" end="270" line="9" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.domain" class="TransactionResponse" class-type="Class" full-class-name="com.accounts.domain.TransactionResponse" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\TransactionResponse.scala" method="&lt;none&gt;" start="258" end="269" line="9" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="com.accounts.domain.AccountDetailsWithTransactions" filename="com\accounts\domain\AccountDetailsWithTransactions.scala" statement-count="4" statements-invoked="2" statement-rate="50.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.domain/AccountDetailsWithTransactions/toJson" statement-count="2" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.domain" class="AccountDetailsWithTransactions" class-type="Class" full-class-name="com.accounts.domain.AccountDetailsWithTransactions" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\AccountDetailsWithTransactions.scala" method="toJson" start="428" end="428" line="13" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.domain" class="AccountDetailsWithTransactions" class-type="Class" full-class-name="com.accounts.domain.AccountDetailsWithTransactions" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\AccountDetailsWithTransactions.scala" method="toJson" start="409" end="434" line="13" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.domain/AccountDetailsWithTransactions/&lt;none&gt;" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.domain" class="AccountDetailsWithTransactions" class-type="Class" full-class-name="com.accounts.domain.AccountDetailsWithTransactions" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\AccountDetailsWithTransactions.scala" method="&lt;none&gt;" start="349" end="383" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.domain" class="AccountDetailsWithTransactions" class-type="Class" full-class-name="com.accounts.domain.AccountDetailsWithTransactions" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\AccountDetailsWithTransactions.scala" method="&lt;none&gt;" start="371" end="382" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="com.accounts.domain.TransactionRequest" filename="com\accounts\domain\TransactionRequest.scala" statement-count="4" statements-invoked="4" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.domain/TransactionRequest/&lt;none&gt;" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.domain" class="TransactionRequest" class-type="Class" full-class-name="com.accounts.domain.TransactionRequest" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\TransactionRequest.scala" method="&lt;none&gt;" start="268" end="302" line="9" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.domain" class="TransactionRequest" class-type="Class" full-class-name="com.accounts.domain.TransactionRequest" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\TransactionRequest.scala" method="&lt;none&gt;" start="290" end="301" line="9" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.domain/TransactionRequest/toJson" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.domain" class="TransactionRequest" class-type="Class" full-class-name="com.accounts.domain.TransactionRequest" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\TransactionRequest.scala" method="toJson" start="347" end="347" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.domain" class="TransactionRequest" class-type="Class" full-class-name="com.accounts.domain.TransactionRequest" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\TransactionRequest.scala" method="toJson" start="328" end="353" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="com.accounts.domain.CustomerInformationResponse" filename="com\accounts\domain\CustomerInformationResponse.scala" statement-count="4" statements-invoked="2" statement-rate="50.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.domain/CustomerInformationResponse/toJson" statement-count="2" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.domain" class="CustomerInformationResponse" class-type="Class" full-class-name="com.accounts.domain.CustomerInformationResponse" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\CustomerInformationResponse.scala" method="toJson" start="470" end="495" line="12" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.domain" class="CustomerInformationResponse" class-type="Class" full-class-name="com.accounts.domain.CustomerInformationResponse" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\CustomerInformationResponse.scala" method="toJson" start="489" end="489" line="12" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.domain/CustomerInformationResponse/&lt;none&gt;" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.domain" class="CustomerInformationResponse" class-type="Class" full-class-name="com.accounts.domain.CustomerInformationResponse" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\CustomerInformationResponse.scala" method="&lt;none&gt;" start="410" end="444" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.domain" class="CustomerInformationResponse" class-type="Class" full-class-name="com.accounts.domain.CustomerInformationResponse" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\CustomerInformationResponse.scala" method="&lt;none&gt;" start="432" end="443" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="com.accounts.domain.TransactionDetails" filename="com\accounts\domain\TransactionDetails.scala" statement-count="4" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.domain/TransactionDetails/toJson" statement-count="2" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.domain" class="TransactionDetails" class-type="Class" full-class-name="com.accounts.domain.TransactionDetails" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\TransactionDetails.scala" method="toJson" start="384" end="409" line="11" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.domain" class="TransactionDetails" class-type="Class" full-class-name="com.accounts.domain.TransactionDetails" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\TransactionDetails.scala" method="toJson" start="403" end="403" line="11" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.domain/TransactionDetails/&lt;none&gt;" statement-count="2" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.domain" class="TransactionDetails" class-type="Class" full-class-name="com.accounts.domain.TransactionDetails" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\TransactionDetails.scala" method="&lt;none&gt;" start="346" end="357" line="10" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.domain" class="TransactionDetails" class-type="Class" full-class-name="com.accounts.domain.TransactionDetails" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\TransactionDetails.scala" method="&lt;none&gt;" start="324" end="358" line="10" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="com.accounts.domain.AccountDetail" filename="com\accounts\domain\AccountDetail.scala" statement-count="4" statements-invoked="2" statement-rate="50.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.domain/AccountDetail/&lt;none&gt;" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.domain" class="AccountDetail" class-type="Class" full-class-name="com.accounts.domain.AccountDetail" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\AccountDetail.scala" method="&lt;none&gt;" start="317" end="328" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.domain" class="AccountDetail" class-type="Class" full-class-name="com.accounts.domain.AccountDetail" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\AccountDetail.scala" method="&lt;none&gt;" start="295" end="329" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.domain/AccountDetail/toJson" statement-count="2" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.domain" class="AccountDetail" class-type="Class" full-class-name="com.accounts.domain.AccountDetail" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\AccountDetail.scala" method="toJson" start="355" end="380" line="12" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.domain" class="AccountDetail" class-type="Class" full-class-name="com.accounts.domain.AccountDetail" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\domain\AccountDetail.scala" method="toJson" start="374" end="374" line="12" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+        <package name="com.accounts.handlers" statement-count="4" statements-invoked="4" statement-rate="100.00">
+            <classes>
+                <class 
+                name="com.accounts.handlers.AccountsHandler" filename="com\accounts\handlers\AccountsHandler.scala" statement-count="4" statements-invoked="4" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.handlers/AccountsHandler/getAccountAndTransactions" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.handlers" class="AccountsHandler" class-type="Object" full-class-name="com.accounts.handlers.AccountsHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\handlers\AccountsHandler.scala" method="getAccountAndTransactions" start="1665" end="2484" line="41" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.handlers" class="AccountsHandler" class-type="Object" full-class-name="com.accounts.handlers.AccountsHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\handlers\AccountsHandler.scala" method="getAccountAndTransactions" start="1654" end="1659" line="40" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.handlers/AccountsHandler/createAccount" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.handlers" class="AccountsHandler" class-type="Object" full-class-name="com.accounts.handlers.AccountsHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\handlers\AccountsHandler.scala" method="createAccount" start="511" end="516" line="14" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.handlers" class="AccountsHandler" class-type="Object" full-class-name="com.accounts.handlers.AccountsHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\handlers\AccountsHandler.scala" method="createAccount" start="522" end="1439" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+        <package name="com.accounts.http" statement-count="50" statements-invoked="44" statement-rate="88.00">
+            <classes>
+                <class 
+                name="com.accounts.http.TransActionManager" filename="com\accounts\http\TransActionManager.scala" statement-count="36" statements-invoked="35" statement-rate="97.22" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.http/TransActionManager/getTransactions" statement-count="20" statements-invoked="19" statement-rate="95.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2272" end="2299" line="45" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2587" end="2626" line="50" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2261" end="2366" line="45" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2686" end="2693" line="52" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2327" end="2328" line="45" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2412" end="2441" line="46" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2747" end="2806" line="55" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2300" end="2302" line="45" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2365" end="2366" line="45" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2545" end="2585" line="50" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2329" end="2351" line="45" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2660" end="2664" line="51" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2524" end="2627" line="50" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2303" end="2326" line="45" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2725" end="2729" line="54" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2263" end="2271" line="45" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2249" end="2367" line="45" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2566" end="2584" line="50" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2352" end="2354" line="45" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="getTransactions" start="2450" end="2486" line="48" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.http/TransActionManager/&lt;none&gt;" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="&lt;none&gt;" start="1943" end="2039" line="42" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.http/TransActionManager/postTransaction" statement-count="15" statements-invoked="15" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="postTransaction" start="3135" end="3136" line="63" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="postTransaction" start="3387" end="3423" line="70" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="postTransaction" start="3112" end="3134" line="63" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="postTransaction" start="3473" end="3478" line="72" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="postTransaction" start="3031" end="3137" line="63" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="postTransaction" start="3348" end="3378" line="68" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="postTransaction" start="3110" end="3111" line="63" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="postTransaction" start="3086" end="3109" line="63" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="postTransaction" start="3055" end="3082" line="63" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="postTransaction" start="3451" end="3455" line="71" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="postTransaction" start="3044" end="3136" line="63" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="postTransaction" start="3083" end="3085" line="63" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="postTransaction" start="3277" end="3303" line="67" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="postTransaction" start="3046" end="3054" line="63" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="TransActionManager" class-type="Object" full-class-name="com.accounts.http.TransActionManager" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="postTransaction" start="3160" end="3270" line="66" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="com.accounts.http.RawHttpExecutor" filename="com\accounts\http\RawHttpExecutor.scala" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.http/RawHttpExecutor/execute" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.http" class="RawHttpExecutor" class-type="Class" full-class-name="com.accounts.http.RawHttpExecutor" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\RawHttpExecutor.scala" method="execute" start="262" end="313" line="9" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="com.accounts.http.GsonListAdapter" filename="com\accounts\http\TransActionManager.scala" statement-count="13" statements-invoked="8" statement-rate="61.54" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.http/GsonListAdapter/serialize" statement-count="5" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.http" class="GsonListAdapter" class-type="Class" full-class-name="com.accounts.http.GsonListAdapter" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="serialize" start="1530" end="1563" line="32" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="GsonListAdapter" class-type="Class" full-class-name="com.accounts.http.GsonListAdapter" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="serialize" start="1637" end="1671" line="33" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="GsonListAdapter" class-type="Class" full-class-name="com.accounts.http.GsonListAdapter" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="serialize" start="1637" end="1664" line="33" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="GsonListAdapter" class-type="Class" full-class-name="com.accounts.http.GsonListAdapter" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="serialize" start="1510" end="1564" line="32" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="GsonListAdapter" class-type="Class" full-class-name="com.accounts.http.GsonListAdapter" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="serialize" start="1623" end="1675" line="33" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.http/GsonListAdapter/deserialize" statement-count="4" statements-invoked="4" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.http" class="GsonListAdapter" class-type="Class" full-class-name="com.accounts.http.GsonListAdapter" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="deserialize" start="1178" end="1232" line="26" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="GsonListAdapter" class-type="Class" full-class-name="com.accounts.http.GsonListAdapter" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="deserialize" start="1198" end="1231" line="26" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="GsonListAdapter" class-type="Class" full-class-name="com.accounts.http.GsonListAdapter" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="deserialize" start="1369" end="1392" line="28" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="GsonListAdapter" class-type="Class" full-class-name="com.accounts.http.GsonListAdapter" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="deserialize" start="1332" end="1363" line="27" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.http/GsonListAdapter/scalaListTypeToJava" statement-count="4" statements-invoked="4" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.http" class="GsonListAdapter" class-type="Class" full-class-name="com.accounts.http.GsonListAdapter" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="scalaListTypeToJava" start="1823" end="1847" line="37" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="GsonListAdapter" class-type="Class" full-class-name="com.accounts.http.GsonListAdapter" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="scalaListTypeToJava" start="1795" end="1821" line="37" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="GsonListAdapter" class-type="Class" full-class-name="com.accounts.http.GsonListAdapter" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="scalaListTypeToJava" start="1768" end="1854" line="37" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.http" class="GsonListAdapter" class-type="Class" full-class-name="com.accounts.http.GsonListAdapter" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\http\TransActionManager.scala" method="scalaListTypeToJava" start="1849" end="1853" line="37" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+        <package name="com.accounts.marshallers" statement-count="17" statements-invoked="15" statement-rate="88.24">
+            <classes>
+                <class 
+                name="com.accounts.marshallers.Json4sMarshaller" filename="com\accounts\marshallers\Json4sMarshaller.scala" statement-count="12" statements-invoked="10" statement-rate="83.33" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.marshallers/Json4sMarshaller/unmarshaller" statement-count="12" statements-invoked="10" statement-rate="83.33" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.marshallers" class="Json4sMarshaller" class-type="Trait" full-class-name="com.accounts.marshallers.Json4sMarshaller" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\marshallers\Json4sMarshaller.scala" method="unmarshaller" start="590" end="608" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.marshallers" class="Json4sMarshaller" class-type="Trait" full-class-name="com.accounts.marshallers.Json4sMarshaller" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\marshallers\Json4sMarshaller.scala" method="unmarshaller" start="923" end="996" line="26" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.marshallers" class="Json4sMarshaller" class-type="Trait" full-class-name="com.accounts.marshallers.Json4sMarshaller" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\marshallers\Json4sMarshaller.scala" method="unmarshaller" start="713" end="736" line="20" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.marshallers" class="Json4sMarshaller" class-type="Trait" full-class-name="com.accounts.marshallers.Json4sMarshaller" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\marshallers\Json4sMarshaller.scala" method="unmarshaller" start="522" end="609" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.marshallers" class="Json4sMarshaller" class-type="Trait" full-class-name="com.accounts.marshallers.Json4sMarshaller" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\marshallers\Json4sMarshaller.scala" method="unmarshaller" start="749" end="783" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.marshallers" class="Json4sMarshaller" class-type="Trait" full-class-name="com.accounts.marshallers.Json4sMarshaller" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\marshallers\Json4sMarshaller.scala" method="unmarshaller" start="890" end="909" line="25" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.marshallers" class="Json4sMarshaller" class-type="Trait" full-class-name="com.accounts.marshallers.Json4sMarshaller" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\marshallers\Json4sMarshaller.scala" method="unmarshaller" start="522" end="565" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.marshallers" class="Json4sMarshaller" class-type="Trait" full-class-name="com.accounts.marshallers.Json4sMarshaller" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\marshallers\Json4sMarshaller.scala" method="unmarshaller" start="678" end="825" line="19" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.marshallers" class="Json4sMarshaller" class-type="Trait" full-class-name="com.accounts.marshallers.Json4sMarshaller" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\marshallers\Json4sMarshaller.scala" method="unmarshaller" start="590" end="608" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.marshallers" class="Json4sMarshaller" class-type="Trait" full-class-name="com.accounts.marshallers.Json4sMarshaller" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\marshallers\Json4sMarshaller.scala" method="unmarshaller" start="522" end="1010" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.marshallers" class="Json4sMarshaller" class-type="Trait" full-class-name="com.accounts.marshallers.Json4sMarshaller" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\marshallers\Json4sMarshaller.scala" method="unmarshaller" start="695" end="737" line="20" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.marshallers" class="Json4sMarshaller" class-type="Trait" full-class-name="com.accounts.marshallers.Json4sMarshaller" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\marshallers\Json4sMarshaller.scala" method="unmarshaller" start="795" end="825" line="22" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="com.accounts.marshallers.BaseMarshaller" filename="com\accounts\marshallers\BaseMarshaller.scala" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.marshallers/BaseMarshaller/&lt;none&gt;" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.marshallers" class="BaseMarshaller" class-type="Trait" full-class-name="com.accounts.marshallers.BaseMarshaller" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\marshallers\BaseMarshaller.scala" method="&lt;none&gt;" start="166" end="186" line="8" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="com.accounts.marshallers.AccountsMarshaller" filename="com\accounts\marshallers\AccountsMarshaller.scala" statement-count="4" statements-invoked="4" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.marshallers/AccountsMarshaller/&lt;none&gt;" statement-count="3" statements-invoked="3" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.marshallers" class="AccountsMarshaller" class-type="Object" full-class-name="com.accounts.marshallers.AccountsMarshaller" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\marshallers\AccountsMarshaller.scala" method="&lt;none&gt;" start="310" end="335" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.marshallers" class="AccountsMarshaller" class-type="Object" full-class-name="com.accounts.marshallers.AccountsMarshaller" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\marshallers\AccountsMarshaller.scala" method="&lt;none&gt;" start="325" end="334" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.marshallers" class="AccountsMarshaller" class-type="Object" full-class-name="com.accounts.marshallers.AccountsMarshaller" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\marshallers\AccountsMarshaller.scala" method="&lt;none&gt;" start="281" end="336" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.marshallers/AccountsMarshaller/classList" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.marshallers" class="AccountsMarshaller" class-type="Object" full-class-name="com.accounts.marshallers.AccountsMarshaller" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\marshallers\AccountsMarshaller.scala" method="classList" start="245" end="251" line="8" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+        <package name="com.accounts.routes" statement-count="155" statements-invoked="112" statement-rate="72.26">
+            <classes>
+                <class 
+                name="com.accounts.routes.AccountsRoutes" filename="com\accounts\routes\AccountsRoutes.scala" statement-count="37" statements-invoked="22" statement-rate="59.46" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.routes/AccountsRoutes/apiRoutes" statement-count="6" statements-invoked="6" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="apiRoutes" start="1499" end="1505" line="40" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="apiRoutes" start="1455" end="1527" line="38" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="apiRoutes" start="1411" end="1445" line="37" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="apiRoutes" start="1428" end="1444" line="37" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="apiRoutes" start="1475" end="1516" line="39" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="apiRoutes" start="1411" end="1536" line="37" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.routes/AccountsRoutes/routes" statement-count="3" statements-invoked="3" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="routes" start="1325" end="1325" line="33" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="routes" start="1326" end="1338" line="33" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="routes" start="1297" end="1339" line="33" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.routes/AccountsRoutes/exceptionHandler" statement-count="17" statements-invoked="2" statement-rate="11.76" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="exceptionHandler" start="957" end="1168" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="exceptionHandler" start="1129" end="1152" line="27" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="exceptionHandler" start="1074" end="1153" line="27" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="exceptionHandler" start="1036" end="1046" line="26" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="exceptionHandler" start="1009" end="1028" line="25" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="exceptionHandler" start="1074" end="1074" line="27" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="exceptionHandler" start="1087" end="1118" line="27" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="exceptionHandler" start="1074" end="1153" line="27" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="exceptionHandler" start="974" end="974" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="exceptionHandler" start="1129" end="1152" line="27" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="exceptionHandler" start="1140" end="1152" line="27" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="exceptionHandler" start="1036" end="1163" line="26" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="exceptionHandler" start="1074" end="1074" line="27" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="exceptionHandler" start="1036" end="1036" line="26" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="exceptionHandler" start="1086" end="1086" line="27" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="exceptionHandler" start="1129" end="1137" line="27" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="exceptionHandler" start="1065" end="1154" line="27" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.routes/AccountsRoutes/toLogEntry" statement-count="8" statements-invoked="8" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="toLogEntry" start="1713" end="1713" line="49" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="toLogEntry" start="1713" end="2005" line="49" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="toLogEntry" start="1663" end="1676" line="48" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="toLogEntry" start="1713" end="1727" line="49" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="toLogEntry" start="1654" end="1707" line="48" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="toLogEntry" start="1748" end="1998" line="53" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="toLogEntry" start="1672" end="1676" line="48" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="toLogEntry" start="1678" end="1706" line="48" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.routes/AccountsRoutes/&lt;none&gt;" statement-count="3" statements-invoked="3" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="&lt;none&gt;" start="1215" end="1232" line="31" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="&lt;none&gt;" start="1215" end="1219" line="31" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsRoutes" class-type="Class" full-class-name="com.accounts.routes.AccountsRoutes" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="&lt;none&gt;" start="1207" end="1233" line="31" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="com.accounts.routes.AccountsOperationRoute" filename="com\accounts\routes\AccountsRoutes.scala" statement-count="95" statements-invoked="79" statement-rate="83.16" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.routes/AccountsOperationRoute/route" statement-count="95" statements-invoked="79" statement-rate="83.16" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2185" end="2195" line="66" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2596" end="2676" line="73" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2473" end="2523" line="72" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2350" end="2380" line="70" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3438" end="3536" line="93" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3196" end="3204" line="89" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3291" end="3291" line="90" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2884" end="3586" line="82" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3446" end="3446" line="93" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2743" end="2841" line="76" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3303" end="3303" line="90" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2482" end="2522" line="72" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2167" end="2170" line="65" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2605" end="2675" line="73" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2360" end="2379" line="70" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3175" end="3175" line="89" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2932" end="2932" line="85" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3037" end="3037" line="87" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2180" end="2865" line="66" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3410" end="3420" line="92" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2752" end="2783" line="76" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3036" end="3036" line="87" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3336" end="3354" line="90" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2930" end="2953" line="85" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2650" end="2668" line="73" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2184" end="2184" line="66" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2493" end="2511" line="72" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3027" end="3553" line="87" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3000" end="3009" line="86" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2605" end="2605" line="73" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2144" end="2144" line="63" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2751" end="2751" line="76" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2319" end="2319" line="69" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2900" end="2907" line="83" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2482" end="2522" line="72" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3282" end="3362" line="90" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3438" end="3536" line="93" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2900" end="3577" line="83" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3325" end="3360" line="90" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3480" end="3535" line="93" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2605" end="2605" line="73" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2929" end="2929" line="85" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2743" end="2841" line="76" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3176" end="3194" line="89" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2884" end="2888" line="82" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2513" end="2521" line="72" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2127" end="2157" line="63" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3446" end="3446" line="93" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3175" end="3175" line="89" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3291" end="3361" line="90" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2932" end="2932" line="85" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2617" end="2617" line="73" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3000" end="3013" line="86" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2360" end="2360" line="70" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2751" end="2751" line="76" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2492" end="2492" line="72" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2127" end="3591" line="63" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3027" end="3057" line="87" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2718" end="2728" line="75" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2180" end="2196" line="66" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2350" end="2854" line="70" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3156" end="3206" line="89" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2359" end="2359" line="70" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2650" end="2668" line="73" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2932" end="2932" line="85" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2146" end="2156" line="63" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2309" end="2318" line="69" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2743" end="2841" line="76" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2932" end="2932" line="85" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3291" end="3361" line="90" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3438" end="3536" line="93" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3037" end="3056" line="87" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3165" end="3205" line="89" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2242" end="2274" line="68" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2785" end="2840" line="76" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2138" end="2143" line="63" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2639" end="2674" line="73" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3447" end="3478" line="93" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2923" end="2954" line="85" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3176" end="3194" line="89" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2923" end="3566" line="85" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3336" end="3354" line="90" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2167" end="2874" line="65" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2493" end="2511" line="72" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2167" end="3586" line="81" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2751" end="2751" line="76" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2932" end="2932" line="85" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3165" end="3205" line="89" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2492" end="2492" line="72" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2605" end="2675" line="73" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2138" end="2156" line="63" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3291" end="3291" line="90" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="2309" end="2339" line="69" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3446" end="3446" line="93" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="AccountsOperationRoute" class-type="Object" full-class-name="com.accounts.routes.AccountsOperationRoute" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="route" start="3010" end="3010" line="86" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="com.accounts.routes.CORSHandler" filename="com\accounts\routes\AccountsRoutes.scala" statement-count="23" statements-invoked="11" statement-rate="47.83" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.routes/CORSHandler/corsHandler" statement-count="3" statements-invoked="3" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="corsHandler" start="4434" end="4457" line="133" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="corsHandler" start="4434" end="4501" line="133" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="corsHandler" start="4467" end="4494" line="135" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.routes/CORSHandler/addCORSHeaders" statement-count="2" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="addCORSHeaders" start="4710" end="4729" line="145" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="addCORSHeaders" start="4689" end="4730" line="145" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.routes/CORSHandler/preflightRequestHandler" statement-count="12" statements-invoked="2" statement-rate="16.67" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="preflightRequestHandler" start="4189" end="4312" line="127" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="preflightRequestHandler" start="4163" end="4170" line="125" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="preflightRequestHandler" start="4189" end="4189" line="127" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="preflightRequestHandler" start="4230" end="4311" line="127" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="preflightRequestHandler" start="4235" end="4310" line="127" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="preflightRequestHandler" start="4229" end="4229" line="127" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="preflightRequestHandler" start="4163" end="4320" line="125" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="preflightRequestHandler" start="4189" end="4189" line="127" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="preflightRequestHandler" start="4180" end="4313" line="127" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="preflightRequestHandler" start="4202" end="4216" line="127" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="preflightRequestHandler" start="4189" end="4189" line="127" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="preflightRequestHandler" start="4189" end="4312" line="127" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.routes/CORSHandler/&lt;none&gt;" statement-count="4" statements-invoked="4" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="&lt;none&gt;" start="3673" end="3717" line="107" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="&lt;none&gt;" start="3660" end="3883" line="105" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="&lt;none&gt;" start="3787" end="3876" line="111" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="&lt;none&gt;" start="3726" end="3778" line="109" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.routes/CORSHandler/addAccessControlHeaders" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="addAccessControlHeaders" start="4018" end="4057" line="119" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.routes" class="CORSHandler" class-type="Trait" full-class-name="com.accounts.routes.CORSHandler" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\routes\AccountsRoutes.scala" method="addAccessControlHeaders" start="4037" end="4056" line="119" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+        <package name="com.accounts.storage" statement-count="52" statements-invoked="52" statement-rate="100.00">
+            <classes>
+                <class 
+                name="com.accounts.storage.CustomerInfoDatabase" filename="com\accounts\storage\CustomerInfoDatabase.scala" statement-count="52" statements-invoked="52" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com.accounts.storage/CustomerInfoDatabase/init" statement-count="38" statements-invoked="38" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="755" end="765" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="904" end="941" line="22" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="350" end="455" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="614" end="620" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="711" end="818" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="961" end="961" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="502" end="511" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="645" end="655" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="370" end="371" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="880" end="893" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="392" end="402" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="536" end="575" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="731" end="732" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="822" end="859" line="20" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="591" end="696" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="611" end="612" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="415" end="454" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="921" end="934" line="22" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="745" end="753" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="633" end="643" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="493" end="501" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="945" end="982" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="778" end="817" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="382" end="390" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="525" end="535" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="373" end="381" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="989" end="995" line="25" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="656" end="695" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="839" end="852" line="20" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="513" end="523" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="734" end="744" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="404" end="414" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="470" end="576" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="863" end="900" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="621" end="631" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="490" end="491" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="962" end="975" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="init" start="767" end="777" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.storage/CustomerInfoDatabase/createAccount" statement-count="11" statements-invoked="11" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="createAccount" start="1272" end="1293" line="32" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="createAccount" start="1307" end="1311" line="32" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="createAccount" start="1371" end="1391" line="34" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="createAccount" start="1094" end="1138" line="29" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="createAccount" start="1322" end="1361" line="33" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="createAccount" start="1111" end="1137" line="29" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="createAccount" start="1265" end="1268" line="32" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="createAccount" start="1296" end="1306" line="32" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="createAccount" start="1245" end="1293" line="32" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="createAccount" start="1230" end="1312" line="32" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="createAccount" start="1167" end="1171" line="30" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.storage/CustomerInfoDatabase/getCustomerDetails" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="getCustomerDetails" start="1484" end="1508" line="40" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.storage/CustomerInfoDatabase/&lt;none&gt;" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="&lt;none&gt;" start="281" end="302" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com.accounts.storage/CustomerInfoDatabase/checkCustomerId" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com.accounts.storage" class="CustomerInfoDatabase" class-type="Class" full-class-name="com.accounts.storage.CustomerInfoDatabase" source="D:\NOTBACKEDUP\exp\bank\Accounts\src\main\scala\com\accounts\storage\CustomerInfoDatabase.scala" method="checkCustomerId" start="1565" end="1594" line="44" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+    </packages>
+</scoverage>

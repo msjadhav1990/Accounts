@@ -1,0 +1,10 @@
+[0m[[0minfo[0m] [0m[32mCustomerInfoDatabaseTests:[0m[0m
+[0m[[0minfo[0m] [0m[32mCustomer Details[0m[0m
+[0m[[0minfo[0m] [0m[32m- Should return customer info details successfully[0m[0m
+[0m[[0minfo[0m] [0m[32m- Should not return customer info for invalid customer id[0m[0m
+[0m[[0minfo[0m] [0m[32mCheck Customer[0m[0m
+[0m[[0minfo[0m] [0m[32m- Should return true for existing customer[0m[0m
+[0m[[0minfo[0m] [0m[32m- Should return false for invalid customer[0m[0m
+[0m[[0minfo[0m] [0m[32mCreate Linked Account[0m[0m
+[0m[[0minfo[0m] [0m[32m- Should Create Linked Account for existing custome[0m[0m
+[0m[[0minfo[0m] [0m[32m- Should not Create Linked Account for invalid custome[0m[0m

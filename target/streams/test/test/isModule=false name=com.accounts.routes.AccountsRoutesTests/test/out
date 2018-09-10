@@ -1,0 +1,12 @@
+[0m[[0minfo[0m] [0m[32mAccountsRoutesTests:[0m[0m
+[0m[[0minfo[0m] [0m[32mGet Customer Details Route[0m[0m
+[0m[[0minfo[0m] [0m[32m- Should return 200 OK[0m[0m
+[0m[[0minfo[0m] [0m[32m- Should return 500 Internal server error[0m[0m
+[0m[[0minfo[0m] [0m[32m- Should return 500 Internal server error for exception[0m[0m
+[0m[[0minfo[0m] [0m[32mCreateLinkedAccount Route[0m[0m
+[0m[[0minfo[0m] [0m[32m- Should return 200 OK[0m[0m
+[0m[[0minfo[0m] [0m[32m- Should return 500 Internal server error[0m[0m
+[0m[[0minfo[0m] [0m[32m- Should return 500 Internal server error for exception[0m[0m
+[0m[[0minfo[0m] [0m[32mAll Routes[0m[0m
+[0m[[0minfo[0m] [0m[32m- Should return 200 OK | GetAccountDetails[0m[0m
+[0m[[0minfo[0m] [0m[32m- Should return 200 OK | CreateLinkedAccount[0m[0m

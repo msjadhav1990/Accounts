@@ -1,0 +1,444 @@
+[info] Updating {file:/D:/NOTBACKEDUP/exp/bank/Accounts/}Accounts...
+[debug] :: building artificial module descriptors from accounts#accounts_2.12;0.1.0-SNAPSHOT
+[debug] ::: dd: dependency: org.scala-lang#scala-compiler;2.12.4 {scala-tool=[default, optional(default)]} (artifacts: )
+[debug] ::: dd: sbt.ivyint.MergedDescriptors@75ebd43 (artifacts: )
+[debug] ::: dd: dependency: ch.qos.logback#logback-classic;1.1.7 {compile=[default(compile)]} (artifacts: )
+[debug] ::: dd: dependency: org.scalatest#scalatest_2.12;3.2.0-SNAP10 {test=[default(compile)]} (artifacts: )
+[debug] ::: dd: dependency: com.typesafe.akka#akka-testkit_2.12;2.5.12 {test=[default(compile)]} (artifacts: )
+[debug] ::: dd: dependency: com.typesafe.akka#akka-http-testkit_2.12;10.1.1 {test=[default(compile)]} (artifacts: )
+[debug] ::: dd: dependency: org.scalacheck#scalacheck_2.12;1.14.0 {compile=[default(compile)]} (artifacts: )
+[debug] ::: dd: dependency: org.mockito#mockito-core;2.13.0 {test=[default(compile)]} (artifacts: )
+[debug] ::: dd: dependency: org.scalamock#scalamock-scalatest-support_2.12;3.6.0 {test=[default(compile)]} (artifacts: )
+[debug] ::: dd: dependency: org.scoverage#scalac-scoverage-runtime_2.12;1.4.0-M3 {test=[default(compile)]} (artifacts: )
+[debug] ::: dd: dependency: com.typesafe.akka#akka-actor_2.12;2.5.12 {compile=[default(compile)]} (artifacts: )
+[debug] ::: dd: dependency: com.typesafe.akka#akka-stream_2.12;2.5.12 {compile=[default(compile)]} (artifacts: )
+[debug] ::: dd: dependency: com.typesafe.akka#akka-http_2.12;10.1.1 {compile=[default(compile)]} (artifacts: )
+[debug] ::: dd: dependency: com.typesafe.akka#akka-slf4j_2.12;2.5.12 {compile=[default(compile)]} (artifacts: )
+[debug] ::: dd: dependency: org.json4s#json4s-native_2.12;3.6.0-M2 {compile=[default(compile)]} (artifacts: )
+[debug] ::: dd: dependency: com.google.code.gson#gson;2.8.2 {compile=[default(compile)]} (artifacts: )
+[debug] ::: dd: dependency: com.typesafe#config;1.3.2 {compile=[default(compile)]} (artifacts: )
+[debug] ::: dd: dependency: org.apache.httpcomponents#httpclient;4.5.4 {compile=[default(compile)]} (artifacts: )
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scala-lang\scala-compiler\2.12.4_temp-resolve-e6b61e2d1bca99bc7c7a637f358a1f5b3866f0f9\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scala-lang\scala-library\2.12.4_temp-resolve-44d0f7ce91447d6f0920c50ccdad2ee2d16748c1\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\ch.qos.logback\logback-classic\1.1.7_temp-resolve-abd337223ab7201431b6f52ef8bff0aa9f64dcb2\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scalatest\scalatest_2.12\3.2.0-SNAP10_temp-resolve-165b02c137376232edcb8a1d62dc37b4fe9ed448\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe.akka\akka-testkit_2.12\2.5.12_temp-resolve-8198b3f9a8d7d62f1ef42c8ca3f05aff7eb001ed\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe.akka\akka-http-testkit_2.12\10.1.1_temp-resolve-0b96a2bbf55c10eeca80a330edbca9c879c5fa29\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scalacheck\scalacheck_2.12\1.14.0_temp-resolve-9b01869ab3a606e7fdbcf716d38caa92fdcf8827\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.mockito\mockito-core\2.13.0_temp-resolve-ea47c5076b99a7d4edd60ebf9da6b1e0ebda92e2\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scalamock\scalamock-scalatest-support_2.12\3.6.0_temp-resolve-1ca4ac2842d57464784e583a5dcc3affe728fd86\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.scoverage\scalac-scoverage-runtime_2.12\1.4.0-M3_temp-resolve-2c043be1cb4fc92aa5f28ed095ca79db69ada96d\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe.akka\akka-actor_2.12\2.5.12_temp-resolve-0f337eb27d820fd73be82cbf660267cb3f075f09\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe.akka\akka-stream_2.12\2.5.12_temp-resolve-fc7577db4e84bfe1466c83a79ec90c151f141d2c\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe.akka\akka-http_2.12\10.1.1_temp-resolve-fdc91cd0c96c99c0147d64ef7242dbd5be475435\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe.akka\akka-slf4j_2.12\2.5.12_temp-resolve-b51f4e8b55af6e15355ecf3f20ff35d23cefee59\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.json4s\json4s-native_2.12\3.6.0-M2_temp-resolve-137a4350cd05141d3c01de0ccc89392e0c6cf9a7\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.google.code.gson\gson\2.8.2_temp-resolve-3911a94c3c63381ac0bba0aa66e26b8e9f9f7447\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\com.typesafe\config\1.3.2_temp-resolve-eb26c5e3d750dcb1d4d2ef8f7e4c03589e8f6737\graphs\graph.json
+[debug] parsing C:\Users\mjadhav2\.sbt\0.13\dependency\module\static\org.apache.httpcomponents\httpclient\4.5.4_temp-resolve-573566c82777160de31137a1cbda33a9ad7e2b0c\graphs\graph.json
+[debug] :: merging update reports
+[debug] ::: -----------
+[debug] :: compile: loop: List()
+[debug] :: sort result: ch.qos.logback:logback-classic, org.scalacheck:scalacheck_2.12, com.typesafe.akka:akka-stream_2.12, com.typesafe.akka:akka-http_2.12, com.typesafe.akka:akka-slf4j_2.12, org.json4s:json4s-native_2.12, com.google.code.gson:gson, org.apache.httpcomponents:httpclient, org.slf4j:slf4j-api, ch.qos.logback:logback-core, org.scala-sbt:test-interface, com.typesafe.akka:akka-actor_2.12, com.typesafe:ssl-config-core_2.12, org.reactivestreams:reactive-streams, com.typesafe.akka:akka-protobuf_2.12, com.typesafe.akka:akka-http-core_2.12, org.json4s:json4s-core_2.12, commons-codec:commons-codec, org.apache.httpcomponents:httpcore, commons-logging:commons-logging, org.scala-lang.modules:scala-java8-compat_2.12, com.typesafe:config, org.scala-lang.modules:scala-parser-combinators_2.12, com.typesafe.akka:akka-parsing_2.12, org.scala-lang.modules:scala-xml_2.12, com.thoughtworks.paranamer:paranamer, org.json4s:json4s-scalap_2.12, org.json4s:json4s-ast_2.12, org.scala-lang:scala-library
+[debug] :: no conflict compile: ch.qos.logback:logback-classic
+[debug] :: no conflict compile: org.scalacheck:scalacheck_2.12
+[debug] :: no conflict compile: com.typesafe.akka:akka-stream_2.12
+[debug] :: no conflict compile: com.typesafe.akka:akka-http_2.12
+[debug] :: no conflict compile: com.typesafe.akka:akka-slf4j_2.12
+[debug] :: no conflict compile: org.json4s:json4s-native_2.12
+[debug] :: no conflict compile: com.google.code.gson:gson
+[debug] :: no conflict compile: org.apache.httpcomponents:httpclient
+[debug] :: merging module reports for compile: org.slf4j:slf4j-api
+[debug] ::: resolving conflict in compile:org.slf4j:slf4j-api (org.slf4j:slf4j-api:1.7.25, org.slf4j:slf4j-api:1.7.20)
+[debug] ::: adds org.slf4j:slf4j-api:1.7.25
+[debug] ::: evicted org.slf4j:slf4j-api:1.7.20
+[debug] :: no conflict compile: ch.qos.logback:logback-core
+[debug] :: no conflict compile: org.scala-sbt:test-interface
+[debug] :: merging module reports for compile: com.typesafe.akka:akka-actor_2.12
+[debug] ::: adds com.typesafe.akka:akka-actor_2.12:2.5.12 ()
+[debug] ::: evicted 
+[debug] :: no conflict compile: com.typesafe:ssl-config-core_2.12
+[debug] :: no conflict compile: org.reactivestreams:reactive-streams
+[debug] :: no conflict compile: com.typesafe.akka:akka-protobuf_2.12
+[debug] :: no conflict compile: com.typesafe.akka:akka-http-core_2.12
+[debug] :: no conflict compile: org.json4s:json4s-core_2.12
+[debug] :: no conflict compile: commons-codec:commons-codec
+[debug] :: no conflict compile: org.apache.httpcomponents:httpcore
+[debug] :: no conflict compile: commons-logging:commons-logging
+[debug] :: merging module reports for compile: org.scala-lang.modules:scala-java8-compat_2.12
+[debug] ::: adds org.scala-lang.modules:scala-java8-compat_2.12:0.8.0
+[debug] ::: evicted 
+[debug] :: merging module reports for compile: com.typesafe:config
+[debug] ::: adds com.typesafe:config:1.3.2
+[debug] ::: evicted 
+[debug] :: no conflict compile: org.scala-lang.modules:scala-parser-combinators_2.12
+[debug] :: no conflict compile: com.typesafe.akka:akka-parsing_2.12
+[debug] :: no conflict compile: org.scala-lang.modules:scala-xml_2.12
+[debug] :: no conflict compile: com.thoughtworks.paranamer:paranamer
+[debug] :: no conflict compile: org.json4s:json4s-scalap_2.12
+[debug] :: no conflict compile: org.json4s:json4s-ast_2.12
+[debug] :: merging module reports for compile: org.scala-lang:scala-library
+[debug] ::: resolving conflict in compile:org.scala-lang:scala-library (org.scala-lang:scala-library:2.12.5 (), org.scala-lang:scala-library:2.12.4 ())
+[debug] ::: adds org.scala-lang:scala-library:2.12.5 ()
+[debug] ::: evicted org.scala-lang:scala-library:2.12.4 ()
+[debug] ::: -----------
+[debug] :: runtime: loop: List()
+[debug] :: sort result: ch.qos.logback:logback-classic, org.scalacheck:scalacheck_2.12, com.typesafe.akka:akka-stream_2.12, com.typesafe.akka:akka-http_2.12, com.typesafe.akka:akka-slf4j_2.12, org.json4s:json4s-native_2.12, com.google.code.gson:gson, org.apache.httpcomponents:httpclient, org.slf4j:slf4j-api, ch.qos.logback:logback-core, org.scala-sbt:test-interface, com.typesafe.akka:akka-actor_2.12, com.typesafe:ssl-config-core_2.12, org.reactivestreams:reactive-streams, com.typesafe.akka:akka-protobuf_2.12, com.typesafe.akka:akka-http-core_2.12, org.json4s:json4s-core_2.12, commons-codec:commons-codec, org.apache.httpcomponents:httpcore, commons-logging:commons-logging, org.scala-lang.modules:scala-java8-compat_2.12, com.typesafe:config, org.scala-lang.modules:scala-parser-combinators_2.12, com.typesafe.akka:akka-parsing_2.12, org.scala-lang.modules:scala-xml_2.12, com.thoughtworks.paranamer:paranamer, org.json4s:json4s-scalap_2.12, org.json4s:json4s-ast_2.12, org.scala-lang:scala-library
+[debug] :: no conflict runtime: ch.qos.logback:logback-classic
+[debug] :: no conflict runtime: org.scalacheck:scalacheck_2.12
+[debug] :: no conflict runtime: com.typesafe.akka:akka-stream_2.12
+[debug] :: no conflict runtime: com.typesafe.akka:akka-http_2.12
+[debug] :: no conflict runtime: com.typesafe.akka:akka-slf4j_2.12
+[debug] :: no conflict runtime: org.json4s:json4s-native_2.12
+[debug] :: no conflict runtime: com.google.code.gson:gson
+[debug] :: no conflict runtime: org.apache.httpcomponents:httpclient
+[debug] :: merging module reports for runtime: org.slf4j:slf4j-api
+[debug] ::: resolving conflict in runtime:org.slf4j:slf4j-api (org.slf4j:slf4j-api:1.7.25, org.slf4j:slf4j-api:1.7.20)
+[debug] ::: adds org.slf4j:slf4j-api:1.7.25
+[debug] ::: evicted org.slf4j:slf4j-api:1.7.20
+[debug] :: no conflict runtime: ch.qos.logback:logback-core
+[debug] :: no conflict runtime: org.scala-sbt:test-interface
+[debug] :: merging module reports for runtime: com.typesafe.akka:akka-actor_2.12
+[debug] ::: adds com.typesafe.akka:akka-actor_2.12:2.5.12 ()
+[debug] ::: evicted 
+[debug] :: no conflict runtime: com.typesafe:ssl-config-core_2.12
+[debug] :: no conflict runtime: org.reactivestreams:reactive-streams
+[debug] :: no conflict runtime: com.typesafe.akka:akka-protobuf_2.12
+[debug] :: no conflict runtime: com.typesafe.akka:akka-http-core_2.12
+[debug] :: no conflict runtime: org.json4s:json4s-core_2.12
+[debug] :: no conflict runtime: commons-codec:commons-codec
+[debug] :: no conflict runtime: org.apache.httpcomponents:httpcore
+[debug] :: no conflict runtime: commons-logging:commons-logging
+[debug] :: merging module reports for runtime: org.scala-lang.modules:scala-java8-compat_2.12
+[debug] ::: adds org.scala-lang.modules:scala-java8-compat_2.12:0.8.0
+[debug] ::: evicted 
+[debug] :: merging module reports for runtime: com.typesafe:config
+[debug] ::: adds com.typesafe:config:1.3.2
+[debug] ::: evicted 
+[debug] :: no conflict runtime: org.scala-lang.modules:scala-parser-combinators_2.12
+[debug] :: no conflict runtime: com.typesafe.akka:akka-parsing_2.12
+[debug] :: no conflict runtime: org.scala-lang.modules:scala-xml_2.12
+[debug] :: no conflict runtime: com.thoughtworks.paranamer:paranamer
+[debug] :: no conflict runtime: org.json4s:json4s-scalap_2.12
+[debug] :: no conflict runtime: org.json4s:json4s-ast_2.12
+[debug] :: merging module reports for runtime: org.scala-lang:scala-library
+[debug] ::: resolving conflict in runtime:org.scala-lang:scala-library (org.scala-lang:scala-library:2.12.5 (), org.scala-lang:scala-library:2.12.4 ())
+[debug] ::: adds org.scala-lang:scala-library:2.12.5 ()
+[debug] ::: evicted org.scala-lang:scala-library:2.12.4 ()
+[debug] ::: -----------
+[debug] :: test: loop: List()
+[debug] :: sort result: ch.qos.logback:logback-classic, com.typesafe.akka:akka-http-testkit_2.12, org.scalacheck:scalacheck_2.12, org.mockito:mockito-core, org.scalamock:scalamock-scalatest-support_2.12, org.scoverage:scalac-scoverage-runtime_2.12, com.typesafe.akka:akka-slf4j_2.12, org.json4s:json4s-native_2.12, com.google.code.gson:gson, org.apache.httpcomponents:httpclient, org.slf4j:slf4j-api, ch.qos.logback:logback-core, org.scalatest:scalatest_2.12, com.typesafe.akka:akka-http_2.12, com.typesafe.akka:akka-stream-testkit_2.12, org.scala-sbt:test-interface, org.objenesis:objenesis, net.bytebuddy:byte-buddy-agent, net.bytebuddy:byte-buddy, org.scalamock:scalamock-core_2.12, org.json4s:json4s-core_2.12, commons-codec:commons-codec, org.apache.httpcomponents:httpcore, commons-logging:commons-logging, org.scala-lang.modules:scala-xml_2.12, org.scalactic:scalactic_2.12, com.typesafe.akka:akka-testkit_2.12, com.typesafe.akka:akka-http-core_2.12, com.typesafe.akka:akka-stream_2.12, com.thoughtworks.paranamer:paranamer, org.json4s:json4s-scalap_2.12, org.json4s:json4s-ast_2.12, org.scala-lang:scala-reflect, com.typesafe.akka:akka-actor_2.12, com.typesafe:ssl-config-core_2.12, org.reactivestreams:reactive-streams, com.typesafe.akka:akka-protobuf_2.12, com.typesafe.akka:akka-parsing_2.12, org.scala-lang.modules:scala-java8-compat_2.12, com.typesafe:config, org.scala-lang.modules:scala-parser-combinators_2.12, org.scala-lang:scala-library
+[debug] :: no conflict test: ch.qos.logback:logback-classic
+[debug] :: no conflict test: com.typesafe.akka:akka-http-testkit_2.12
+[debug] :: no conflict test: org.scalacheck:scalacheck_2.12
+[debug] :: no conflict test: org.mockito:mockito-core
+[debug] :: no conflict test: org.scalamock:scalamock-scalatest-support_2.12
+[debug] :: no conflict test: org.scoverage:scalac-scoverage-runtime_2.12
+[debug] :: no conflict test: com.typesafe.akka:akka-slf4j_2.12
+[debug] :: no conflict test: org.json4s:json4s-native_2.12
+[debug] :: no conflict test: com.google.code.gson:gson
+[debug] :: no conflict test: org.apache.httpcomponents:httpclient
+[debug] :: merging module reports for test: org.slf4j:slf4j-api
+[debug] ::: resolving conflict in test:org.slf4j:slf4j-api (org.slf4j:slf4j-api:1.7.25, org.slf4j:slf4j-api:1.7.20)
+[debug] ::: adds org.slf4j:slf4j-api:1.7.25
+[debug] ::: evicted org.slf4j:slf4j-api:1.7.20
+[debug] :: no conflict test: ch.qos.logback:logback-core
+[debug] :: merging module reports for test: org.scalatest:scalatest_2.12
+[debug] ::: resolving conflict in test:org.scalatest:scalatest_2.12 (org.scalatest:scalatest_2.12:3.0.1, org.scalatest:scalatest_2.12:3.2.0-SNAP10)
+[debug] ::: adds org.scalatest:scalatest_2.12:3.2.0-SNAP10
+[debug] ::: evicted org.scalatest:scalatest_2.12:3.0.1
+[debug] :::: transitively evicted test: org.scala-lang.modules:scala-xml_2.12:1.0.5
+[debug] :::: transitively evicted test: org.scala-lang.modules:scala-parser-combinators_2.12:1.0.4
+[debug] :::: transitively evicted test: org.scalactic:scalactic_2.12:3.0.1
+[debug] :: merging module reports for test: com.typesafe.akka:akka-http_2.12
+[debug] ::: adds com.typesafe.akka:akka-http_2.12:10.1.1 ()
+[debug] ::: evicted 
+[debug] :: no conflict test: com.typesafe.akka:akka-stream-testkit_2.12
+[debug] :: no conflict test: org.scala-sbt:test-interface
+[debug] :: no conflict test: org.objenesis:objenesis
+[debug] :: no conflict test: net.bytebuddy:byte-buddy-agent
+[debug] :: no conflict test: net.bytebuddy:byte-buddy
+[debug] :: no conflict test: org.scalamock:scalamock-core_2.12
+[debug] :: no conflict test: org.json4s:json4s-core_2.12
+[debug] :: no conflict test: commons-codec:commons-codec
+[debug] :: no conflict test: org.apache.httpcomponents:httpcore
+[debug] :: no conflict test: commons-logging:commons-logging
+[debug] :: merging module reports for test: org.scala-lang.modules:scala-xml_2.12
+[debug] ::: adds org.scala-lang.modules:scala-xml_2.12:1.0.6
+[debug] ::: evicted org.scala-lang.modules:scala-xml_2.12:1.0.5
+[debug] :: merging module reports for test: org.scalactic:scalactic_2.12
+[debug] ::: adds org.scalactic:scalactic_2.12:3.2.0-SNAP10
+[debug] ::: evicted org.scalactic:scalactic_2.12:3.0.1
+[debug] :: merging module reports for test: com.typesafe.akka:akka-testkit_2.12
+[debug] ::: resolving conflict in test:com.typesafe.akka:akka-testkit_2.12 (com.typesafe.akka:akka-testkit_2.12:2.5.12 (), com.typesafe.akka:akka-testkit_2.12:2.5.11 ())
+[debug] ::: adds com.typesafe.akka:akka-testkit_2.12:2.5.12 ()
+[debug] ::: evicted com.typesafe.akka:akka-testkit_2.12:2.5.11 ()
+[debug] :: merging module reports for test: com.typesafe.akka:akka-http-core_2.12
+[debug] ::: adds com.typesafe.akka:akka-http-core_2.12:10.1.1 ()
+[debug] ::: evicted 
+[debug] :: merging module reports for test: com.typesafe.akka:akka-stream_2.12
+[debug] ::: resolving conflict in test:com.typesafe.akka:akka-stream_2.12 (com.typesafe.akka:akka-stream_2.12:2.5.12 (), com.typesafe.akka:akka-stream_2.12:2.5.11 ())
+[debug] ::: adds com.typesafe.akka:akka-stream_2.12:2.5.12 ()
+[debug] ::: evicted com.typesafe.akka:akka-stream_2.12:2.5.11 ()
+[debug] :::: transitively evicted test: org.reactivestreams:reactive-streams:1.0.2
+[debug] :::: transitively evicted test: com.typesafe.akka:akka-protobuf_2.12:2.5.11 ()
+[debug] :::: transitively evicted test: com.typesafe:ssl-config-core_2.12:0.2.2
+[debug] :: no conflict test: com.thoughtworks.paranamer:paranamer
+[debug] :: no conflict test: org.json4s:json4s-scalap_2.12
+[debug] :: no conflict test: org.json4s:json4s-ast_2.12
+[debug] :: merging module reports for test: org.scala-lang:scala-reflect
+[debug] ::: resolving conflict in test:org.scala-lang:scala-reflect (org.scala-lang:scala-reflect:2.12.1 (), org.scala-lang:scala-reflect:2.12.4 ())
+[debug] ::: adds org.scala-lang:scala-reflect:2.12.4 ()
+[debug] ::: evicted org.scala-lang:scala-reflect:2.12.1 ()
+[debug] :: merging module reports for test: com.typesafe.akka:akka-actor_2.12
+[debug] ::: resolving conflict in test:com.typesafe.akka:akka-actor_2.12 (com.typesafe.akka:akka-actor_2.12:2.5.11 (), com.typesafe.akka:akka-actor_2.12:2.5.12 ())
+[debug] ::: adds com.typesafe.akka:akka-actor_2.12:2.5.12 ()
+[debug] ::: evicted com.typesafe.akka:akka-actor_2.12:2.5.11 ()
+[debug] :::: transitively evicted test: org.scala-lang.modules:scala-java8-compat_2.12:0.8.0
+[debug] :: merging module reports for test: com.typesafe:ssl-config-core_2.12
+[debug] ::: adds com.typesafe:ssl-config-core_2.12:0.2.3
+[debug] ::: evicted com.typesafe:ssl-config-core_2.12:0.2.2
+[debug] :::: transitively evicted test: org.scala-lang.modules:scala-parser-combinators_2.12:1.0.4
+[debug] :: merging module reports for test: org.reactivestreams:reactive-streams
+[debug] ::: adds org.reactivestreams:reactive-streams:1.0.2
+[debug] ::: evicted 
+[debug] :: merging module reports for test: com.typesafe.akka:akka-protobuf_2.12
+[debug] ::: adds com.typesafe.akka:akka-protobuf_2.12:2.5.12 ()
+[debug] ::: evicted com.typesafe.akka:akka-protobuf_2.12:2.5.11 ()
+[debug] :: merging module reports for test: com.typesafe.akka:akka-parsing_2.12
+[debug] ::: adds com.typesafe.akka:akka-parsing_2.12:10.1.1 ()
+[debug] ::: evicted 
+[debug] :: merging module reports for test: org.scala-lang.modules:scala-java8-compat_2.12
+[debug] ::: adds org.scala-lang.modules:scala-java8-compat_2.12:0.8.0
+[debug] ::: evicted 
+[debug] :: merging module reports for test: com.typesafe:config
+[debug] ::: adds com.typesafe:config:1.3.2
+[debug] ::: evicted 
+[debug] :: merging module reports for test: org.scala-lang.modules:scala-parser-combinators_2.12
+[debug] ::: adds org.scala-lang.modules:scala-parser-combinators_2.12:1.1.0
+[debug] ::: evicted org.scala-lang.modules:scala-parser-combinators_2.12:1.0.4
+[debug] :: merging module reports for test: org.scala-lang:scala-library
+[debug] ::: resolving conflict in test:org.scala-lang:scala-library (org.scala-lang:scala-library:2.12.1 (), org.scala-lang:scala-library:2.12.5 (), org.scala-lang:scala-library:2.12.4 ())
+[debug] ::: adds org.scala-lang:scala-library:2.12.5 ()
+[debug] ::: evicted org.scala-lang:scala-library:2.12.1 (), org.scala-lang:scala-library:2.12.4 ()
+[debug] ::: -----------
+[debug] :: provided: loop: List()
+[debug] :: sort result: 
+[debug] ::: -----------
+[debug] :: optional: loop: List()
+[debug] :: sort result: 
+[debug] ::: -----------
+[debug] :: compile-internal: loop: List()
+[debug] :: sort result: ch.qos.logback:logback-classic, org.scalacheck:scalacheck_2.12, com.typesafe.akka:akka-stream_2.12, com.typesafe.akka:akka-http_2.12, com.typesafe.akka:akka-slf4j_2.12, org.json4s:json4s-native_2.12, com.google.code.gson:gson, org.apache.httpcomponents:httpclient, org.slf4j:slf4j-api, ch.qos.logback:logback-core, org.scala-sbt:test-interface, com.typesafe.akka:akka-actor_2.12, com.typesafe:ssl-config-core_2.12, org.reactivestreams:reactive-streams, com.typesafe.akka:akka-protobuf_2.12, com.typesafe.akka:akka-http-core_2.12, org.json4s:json4s-core_2.12, commons-codec:commons-codec, org.apache.httpcomponents:httpcore, commons-logging:commons-logging, org.scala-lang.modules:scala-java8-compat_2.12, com.typesafe:config, org.scala-lang.modules:scala-parser-combinators_2.12, com.typesafe.akka:akka-parsing_2.12, org.scala-lang.modules:scala-xml_2.12, com.thoughtworks.paranamer:paranamer, org.json4s:json4s-scalap_2.12, org.json4s:json4s-ast_2.12, org.scala-lang:scala-library
+[debug] :: no conflict compile-internal: ch.qos.logback:logback-classic
+[debug] :: no conflict compile-internal: org.scalacheck:scalacheck_2.12
+[debug] :: no conflict compile-internal: com.typesafe.akka:akka-stream_2.12
+[debug] :: no conflict compile-internal: com.typesafe.akka:akka-http_2.12
+[debug] :: no conflict compile-internal: com.typesafe.akka:akka-slf4j_2.12
+[debug] :: no conflict compile-internal: org.json4s:json4s-native_2.12
+[debug] :: no conflict compile-internal: com.google.code.gson:gson
+[debug] :: no conflict compile-internal: org.apache.httpcomponents:httpclient
+[debug] :: merging module reports for compile-internal: org.slf4j:slf4j-api
+[debug] ::: resolving conflict in compile-internal:org.slf4j:slf4j-api (org.slf4j:slf4j-api:1.7.25, org.slf4j:slf4j-api:1.7.20)
+[debug] ::: adds org.slf4j:slf4j-api:1.7.25
+[debug] ::: evicted org.slf4j:slf4j-api:1.7.20
+[debug] :: no conflict compile-internal: ch.qos.logback:logback-core
+[debug] :: no conflict compile-internal: org.scala-sbt:test-interface
+[debug] :: merging module reports for compile-internal: com.typesafe.akka:akka-actor_2.12
+[debug] ::: adds com.typesafe.akka:akka-actor_2.12:2.5.12 ()
+[debug] ::: evicted 
+[debug] :: no conflict compile-internal: com.typesafe:ssl-config-core_2.12
+[debug] :: no conflict compile-internal: org.reactivestreams:reactive-streams
+[debug] :: no conflict compile-internal: com.typesafe.akka:akka-protobuf_2.12
+[debug] :: no conflict compile-internal: com.typesafe.akka:akka-http-core_2.12
+[debug] :: no conflict compile-internal: org.json4s:json4s-core_2.12
+[debug] :: no conflict compile-internal: commons-codec:commons-codec
+[debug] :: no conflict compile-internal: org.apache.httpcomponents:httpcore
+[debug] :: no conflict compile-internal: commons-logging:commons-logging
+[debug] :: merging module reports for compile-internal: org.scala-lang.modules:scala-java8-compat_2.12
+[debug] ::: adds org.scala-lang.modules:scala-java8-compat_2.12:0.8.0
+[debug] ::: evicted 
+[debug] :: merging module reports for compile-internal: com.typesafe:config
+[debug] ::: adds com.typesafe:config:1.3.2
+[debug] ::: evicted 
+[debug] :: no conflict compile-internal: org.scala-lang.modules:scala-parser-combinators_2.12
+[debug] :: no conflict compile-internal: com.typesafe.akka:akka-parsing_2.12
+[debug] :: no conflict compile-internal: org.scala-lang.modules:scala-xml_2.12
+[debug] :: no conflict compile-internal: com.thoughtworks.paranamer:paranamer
+[debug] :: no conflict compile-internal: org.json4s:json4s-scalap_2.12
+[debug] :: no conflict compile-internal: org.json4s:json4s-ast_2.12
+[debug] :: merging module reports for compile-internal: org.scala-lang:scala-library
+[debug] ::: resolving conflict in compile-internal:org.scala-lang:scala-library (org.scala-lang:scala-library:2.12.5 (), org.scala-lang:scala-library:2.12.4 ())
+[debug] ::: adds org.scala-lang:scala-library:2.12.5 ()
+[debug] ::: evicted org.scala-lang:scala-library:2.12.4 ()
+[debug] ::: -----------
+[debug] :: runtime-internal: loop: List()
+[debug] :: sort result: ch.qos.logback:logback-classic, org.scalacheck:scalacheck_2.12, com.typesafe.akka:akka-stream_2.12, com.typesafe.akka:akka-http_2.12, com.typesafe.akka:akka-slf4j_2.12, org.json4s:json4s-native_2.12, com.google.code.gson:gson, org.apache.httpcomponents:httpclient, org.slf4j:slf4j-api, ch.qos.logback:logback-core, org.scala-sbt:test-interface, com.typesafe.akka:akka-actor_2.12, com.typesafe:ssl-config-core_2.12, org.reactivestreams:reactive-streams, com.typesafe.akka:akka-protobuf_2.12, com.typesafe.akka:akka-http-core_2.12, org.json4s:json4s-core_2.12, commons-codec:commons-codec, org.apache.httpcomponents:httpcore, commons-logging:commons-logging, org.scala-lang.modules:scala-java8-compat_2.12, com.typesafe:config, org.scala-lang.modules:scala-parser-combinators_2.12, com.typesafe.akka:akka-parsing_2.12, org.scala-lang.modules:scala-xml_2.12, com.thoughtworks.paranamer:paranamer, org.json4s:json4s-scalap_2.12, org.json4s:json4s-ast_2.12, org.scala-lang:scala-library
+[debug] :: no conflict runtime-internal: ch.qos.logback:logback-classic
+[debug] :: no conflict runtime-internal: org.scalacheck:scalacheck_2.12
+[debug] :: no conflict runtime-internal: com.typesafe.akka:akka-stream_2.12
+[debug] :: no conflict runtime-internal: com.typesafe.akka:akka-http_2.12
+[debug] :: no conflict runtime-internal: com.typesafe.akka:akka-slf4j_2.12
+[debug] :: no conflict runtime-internal: org.json4s:json4s-native_2.12
+[debug] :: no conflict runtime-internal: com.google.code.gson:gson
+[debug] :: no conflict runtime-internal: org.apache.httpcomponents:httpclient
+[debug] :: merging module reports for runtime-internal: org.slf4j:slf4j-api
+[debug] ::: resolving conflict in runtime-internal:org.slf4j:slf4j-api (org.slf4j:slf4j-api:1.7.25, org.slf4j:slf4j-api:1.7.20)
+[debug] ::: adds org.slf4j:slf4j-api:1.7.25
+[debug] ::: evicted org.slf4j:slf4j-api:1.7.20
+[debug] :: no conflict runtime-internal: ch.qos.logback:logback-core
+[debug] :: no conflict runtime-internal: org.scala-sbt:test-interface
+[debug] :: merging module reports for runtime-internal: com.typesafe.akka:akka-actor_2.12
+[debug] ::: adds com.typesafe.akka:akka-actor_2.12:2.5.12 ()
+[debug] ::: evicted 
+[debug] :: no conflict runtime-internal: com.typesafe:ssl-config-core_2.12
+[debug] :: no conflict runtime-internal: org.reactivestreams:reactive-streams
+[debug] :: no conflict runtime-internal: com.typesafe.akka:akka-protobuf_2.12
+[debug] :: no conflict runtime-internal: com.typesafe.akka:akka-http-core_2.12
+[debug] :: no conflict runtime-internal: org.json4s:json4s-core_2.12
+[debug] :: no conflict runtime-internal: commons-codec:commons-codec
+[debug] :: no conflict runtime-internal: org.apache.httpcomponents:httpcore
+[debug] :: no conflict runtime-internal: commons-logging:commons-logging
+[debug] :: merging module reports for runtime-internal: org.scala-lang.modules:scala-java8-compat_2.12
+[debug] ::: adds org.scala-lang.modules:scala-java8-compat_2.12:0.8.0
+[debug] ::: evicted 
+[debug] :: merging module reports for runtime-internal: com.typesafe:config
+[debug] ::: adds com.typesafe:config:1.3.2
+[debug] ::: evicted 
+[debug] :: no conflict runtime-internal: org.scala-lang.modules:scala-parser-combinators_2.12
+[debug] :: no conflict runtime-internal: com.typesafe.akka:akka-parsing_2.12
+[debug] :: no conflict runtime-internal: org.scala-lang.modules:scala-xml_2.12
+[debug] :: no conflict runtime-internal: com.thoughtworks.paranamer:paranamer
+[debug] :: no conflict runtime-internal: org.json4s:json4s-scalap_2.12
+[debug] :: no conflict runtime-internal: org.json4s:json4s-ast_2.12
+[debug] :: merging module reports for runtime-internal: org.scala-lang:scala-library
+[debug] ::: resolving conflict in runtime-internal:org.scala-lang:scala-library (org.scala-lang:scala-library:2.12.5 (), org.scala-lang:scala-library:2.12.4 ())
+[debug] ::: adds org.scala-lang:scala-library:2.12.5 ()
+[debug] ::: evicted org.scala-lang:scala-library:2.12.4 ()
+[debug] ::: -----------
+[debug] :: test-internal: loop: List()
+[debug] :: sort result: ch.qos.logback:logback-classic, com.typesafe.akka:akka-http-testkit_2.12, org.scalacheck:scalacheck_2.12, org.mockito:mockito-core, org.scalamock:scalamock-scalatest-support_2.12, org.scoverage:scalac-scoverage-runtime_2.12, com.typesafe.akka:akka-slf4j_2.12, org.json4s:json4s-native_2.12, com.google.code.gson:gson, org.apache.httpcomponents:httpclient, org.slf4j:slf4j-api, ch.qos.logback:logback-core, org.scalatest:scalatest_2.12, com.typesafe.akka:akka-http_2.12, com.typesafe.akka:akka-stream-testkit_2.12, org.scala-sbt:test-interface, org.objenesis:objenesis, net.bytebuddy:byte-buddy-agent, net.bytebuddy:byte-buddy, org.scalamock:scalamock-core_2.12, org.json4s:json4s-core_2.12, commons-codec:commons-codec, org.apache.httpcomponents:httpcore, commons-logging:commons-logging, org.scala-lang.modules:scala-xml_2.12, org.scalactic:scalactic_2.12, com.typesafe.akka:akka-testkit_2.12, com.typesafe.akka:akka-http-core_2.12, com.typesafe.akka:akka-stream_2.12, com.thoughtworks.paranamer:paranamer, org.json4s:json4s-scalap_2.12, org.json4s:json4s-ast_2.12, org.scala-lang:scala-reflect, com.typesafe.akka:akka-actor_2.12, com.typesafe:ssl-config-core_2.12, org.reactivestreams:reactive-streams, com.typesafe.akka:akka-protobuf_2.12, com.typesafe.akka:akka-parsing_2.12, org.scala-lang.modules:scala-java8-compat_2.12, com.typesafe:config, org.scala-lang.modules:scala-parser-combinators_2.12, org.scala-lang:scala-library
+[debug] :: no conflict test-internal: ch.qos.logback:logback-classic
+[debug] :: no conflict test-internal: com.typesafe.akka:akka-http-testkit_2.12
+[debug] :: no conflict test-internal: org.scalacheck:scalacheck_2.12
+[debug] :: no conflict test-internal: org.mockito:mockito-core
+[debug] :: no conflict test-internal: org.scalamock:scalamock-scalatest-support_2.12
+[debug] :: no conflict test-internal: org.scoverage:scalac-scoverage-runtime_2.12
+[debug] :: no conflict test-internal: com.typesafe.akka:akka-slf4j_2.12
+[debug] :: no conflict test-internal: org.json4s:json4s-native_2.12
+[debug] :: no conflict test-internal: com.google.code.gson:gson
+[debug] :: no conflict test-internal: org.apache.httpcomponents:httpclient
+[debug] :: merging module reports for test-internal: org.slf4j:slf4j-api
+[debug] ::: resolving conflict in test-internal:org.slf4j:slf4j-api (org.slf4j:slf4j-api:1.7.25, org.slf4j:slf4j-api:1.7.20)
+[debug] ::: adds org.slf4j:slf4j-api:1.7.25
+[debug] ::: evicted org.slf4j:slf4j-api:1.7.20
+[debug] :: no conflict test-internal: ch.qos.logback:logback-core
+[debug] :: merging module reports for test-internal: org.scalatest:scalatest_2.12
+[debug] ::: resolving conflict in test-internal:org.scalatest:scalatest_2.12 (org.scalatest:scalatest_2.12:3.0.1, org.scalatest:scalatest_2.12:3.2.0-SNAP10)
+[debug] ::: adds org.scalatest:scalatest_2.12:3.2.0-SNAP10
+[debug] ::: evicted org.scalatest:scalatest_2.12:3.0.1
+[debug] :::: transitively evicted test-internal: org.scala-lang.modules:scala-xml_2.12:1.0.5
+[debug] :::: transitively evicted test-internal: org.scala-lang.modules:scala-parser-combinators_2.12:1.0.4
+[debug] :::: transitively evicted test-internal: org.scalactic:scalactic_2.12:3.0.1
+[debug] :: merging module reports for test-internal: com.typesafe.akka:akka-http_2.12
+[debug] ::: adds com.typesafe.akka:akka-http_2.12:10.1.1 ()
+[debug] ::: evicted 
+[debug] :: no conflict test-internal: com.typesafe.akka:akka-stream-testkit_2.12
+[debug] :: no conflict test-internal: org.scala-sbt:test-interface
+[debug] :: no conflict test-internal: org.objenesis:objenesis
+[debug] :: no conflict test-internal: net.bytebuddy:byte-buddy-agent
+[debug] :: no conflict test-internal: net.bytebuddy:byte-buddy
+[debug] :: no conflict test-internal: org.scalamock:scalamock-core_2.12
+[debug] :: no conflict test-internal: org.json4s:json4s-core_2.12
+[debug] :: no conflict test-internal: commons-codec:commons-codec
+[debug] :: no conflict test-internal: org.apache.httpcomponents:httpcore
+[debug] :: no conflict test-internal: commons-logging:commons-logging
+[debug] :: merging module reports for test-internal: org.scala-lang.modules:scala-xml_2.12
+[debug] ::: adds org.scala-lang.modules:scala-xml_2.12:1.0.6
+[debug] ::: evicted org.scala-lang.modules:scala-xml_2.12:1.0.5
+[debug] :: merging module reports for test-internal: org.scalactic:scalactic_2.12
+[debug] ::: adds org.scalactic:scalactic_2.12:3.2.0-SNAP10
+[debug] ::: evicted org.scalactic:scalactic_2.12:3.0.1
+[debug] :: merging module reports for test-internal: com.typesafe.akka:akka-testkit_2.12
+[debug] ::: resolving conflict in test-internal:com.typesafe.akka:akka-testkit_2.12 (com.typesafe.akka:akka-testkit_2.12:2.5.12 (), com.typesafe.akka:akka-testkit_2.12:2.5.11 ())
+[debug] ::: adds com.typesafe.akka:akka-testkit_2.12:2.5.12 ()
+[debug] ::: evicted com.typesafe.akka:akka-testkit_2.12:2.5.11 ()
+[debug] :: merging module reports for test-internal: com.typesafe.akka:akka-http-core_2.12
+[debug] ::: adds com.typesafe.akka:akka-http-core_2.12:10.1.1 ()
+[debug] ::: evicted 
+[debug] :: merging module reports for test-internal: com.typesafe.akka:akka-stream_2.12
+[debug] ::: resolving conflict in test-internal:com.typesafe.akka:akka-stream_2.12 (com.typesafe.akka:akka-stream_2.12:2.5.12 (), com.typesafe.akka:akka-stream_2.12:2.5.11 ())
+[debug] ::: adds com.typesafe.akka:akka-stream_2.12:2.5.12 ()
+[debug] ::: evicted com.typesafe.akka:akka-stream_2.12:2.5.11 ()
+[debug] :::: transitively evicted test-internal: org.reactivestreams:reactive-streams:1.0.2
+[debug] :::: transitively evicted test-internal: com.typesafe.akka:akka-protobuf_2.12:2.5.11 ()
+[debug] :::: transitively evicted test-internal: com.typesafe:ssl-config-core_2.12:0.2.2
+[debug] :: no conflict test-internal: com.thoughtworks.paranamer:paranamer
+[debug] :: no conflict test-internal: org.json4s:json4s-scalap_2.12
+[debug] :: no conflict test-internal: org.json4s:json4s-ast_2.12
+[debug] :: merging module reports for test-internal: org.scala-lang:scala-reflect
+[debug] ::: resolving conflict in test-internal:org.scala-lang:scala-reflect (org.scala-lang:scala-reflect:2.12.1 (), org.scala-lang:scala-reflect:2.12.4 ())
+[debug] ::: adds org.scala-lang:scala-reflect:2.12.4 ()
+[debug] ::: evicted org.scala-lang:scala-reflect:2.12.1 ()
+[debug] :: merging module reports for test-internal: com.typesafe.akka:akka-actor_2.12
+[debug] ::: resolving conflict in test-internal:com.typesafe.akka:akka-actor_2.12 (com.typesafe.akka:akka-actor_2.12:2.5.11 (), com.typesafe.akka:akka-actor_2.12:2.5.12 ())
+[debug] ::: adds com.typesafe.akka:akka-actor_2.12:2.5.12 ()
+[debug] ::: evicted com.typesafe.akka:akka-actor_2.12:2.5.11 ()
+[debug] :::: transitively evicted test-internal: org.scala-lang.modules:scala-java8-compat_2.12:0.8.0
+[debug] :: merging module reports for test-internal: com.typesafe:ssl-config-core_2.12
+[debug] ::: adds com.typesafe:ssl-config-core_2.12:0.2.3
+[debug] ::: evicted com.typesafe:ssl-config-core_2.12:0.2.2
+[debug] :::: transitively evicted test-internal: org.scala-lang.modules:scala-parser-combinators_2.12:1.0.4
+[debug] :: merging module reports for test-internal: org.reactivestreams:reactive-streams
+[debug] ::: adds org.reactivestreams:reactive-streams:1.0.2
+[debug] ::: evicted 
+[debug] :: merging module reports for test-internal: com.typesafe.akka:akka-protobuf_2.12
+[debug] ::: adds com.typesafe.akka:akka-protobuf_2.12:2.5.12 ()
+[debug] ::: evicted com.typesafe.akka:akka-protobuf_2.12:2.5.11 ()
+[debug] :: merging module reports for test-internal: com.typesafe.akka:akka-parsing_2.12
+[debug] ::: adds com.typesafe.akka:akka-parsing_2.12:10.1.1 ()
+[debug] ::: evicted 
+[debug] :: merging module reports for test-internal: org.scala-lang.modules:scala-java8-compat_2.12
+[debug] ::: adds org.scala-lang.modules:scala-java8-compat_2.12:0.8.0
+[debug] ::: evicted 
+[debug] :: merging module reports for test-internal: com.typesafe:config
+[debug] ::: adds com.typesafe:config:1.3.2
+[debug] ::: evicted 
+[debug] :: merging module reports for test-internal: org.scala-lang.modules:scala-parser-combinators_2.12
+[debug] ::: adds org.scala-lang.modules:scala-parser-combinators_2.12:1.1.0
+[debug] ::: evicted org.scala-lang.modules:scala-parser-combinators_2.12:1.0.4
+[debug] :: merging module reports for test-internal: org.scala-lang:scala-library
+[debug] ::: resolving conflict in test-internal:org.scala-lang:scala-library (org.scala-lang:scala-library:2.12.1 (), org.scala-lang:scala-library:2.12.5 (), org.scala-lang:scala-library:2.12.4 ())
+[debug] ::: adds org.scala-lang:scala-library:2.12.5 ()
+[debug] ::: evicted org.scala-lang:scala-library:2.12.1 (), org.scala-lang:scala-library:2.12.4 ()
+[debug] ::: -----------
+[debug] :: plugin: loop: List()
+[debug] :: sort result: 
+[debug] ::: -----------
+[debug] :: sources: loop: List()
+[debug] :: sort result: 
+[debug] ::: -----------
+[debug] :: docs: loop: List()
+[debug] :: sort result: 
+[debug] ::: -----------
+[debug] :: pom: loop: List()
+[debug] :: sort result: 
+[debug] ::: -----------
+[debug] :: scala-tool: loop: List()
+[debug] :: sort result: org.scala-lang:scala-compiler, jline:jline, org.scala-lang.modules:scala-xml_2.12, org.scala-lang:scala-reflect, org.scala-lang:scala-library
+[debug] :: no conflict scala-tool: org.scala-lang:scala-compiler
+[debug] :: no conflict scala-tool: jline:jline
+[debug] :: no conflict scala-tool: org.scala-lang.modules:scala-xml_2.12
+[debug] :: no conflict scala-tool: org.scala-lang:scala-reflect
+[debug] :: merging module reports for scala-tool: org.scala-lang:scala-library
+[debug] ::: adds org.scala-lang:scala-library:2.12.4 ()
+[debug] ::: evicted 
+[debug] ::: -----------
+[debug] :: scoveragePlugin: loop: List()
+[debug] :: sort result: 
+[info] Done updating.
+[warn] Scala version was updated by one of library dependencies:
+[warn] 	* org.scala-lang:scala-library:2.12.4 -> 2.12.5
+[warn] To force scalaVersion, add the following:
+[warn] 	ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) }
+[warn] Run 'evicted' to see detailed eviction warnings

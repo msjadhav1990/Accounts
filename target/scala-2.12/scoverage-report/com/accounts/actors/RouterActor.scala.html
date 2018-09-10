@@ -1,0 +1,693 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          com\accounts\actors\RouterActor.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package com.accounts.actors
+</span>2 <span style=''>
+</span>3 <span style=''>import akka.actor.{Actor, ActorContext, ActorRef, Props}
+</span>4 <span style=''>import akka.http.scaladsl.model.StatusCodes
+</span>5 <span style=''>import com.accounts.context.ResourceContext
+</span>6 <span style=''>import com.accounts.domain.{CreateLinkedAccount, GenericHttpResponse, GetAccountDetailsRequest, MessageType}
+</span>7 <span style=''>
+</span>8 <span style=''>import scala.concurrent.ExecutionContext
+</span>9 <span style=''>
+</span>10 <span style=''>case class RouterActor(resolver: Option[Any =&gt; Option[ActorRef]] = None)(implicit ec: ExecutionContext,rc:ResourceContext) extends Actor {
+</span>11 <span style=''>  private val hierarchyResolver: (Any) =&gt; Option[ActorRef] = </span><span style='background: #F0ADAD'>resolver.getOrElse(RouterActor.defaultResolver)</span><span style=''>
+</span>12 <span style=''>  override def receive: Receive = {
+</span>13 <span style=''>    case command: Any =&gt; </span><span style='background: #F0ADAD'>hierarchyResolver(command).fold {
+</span>14 <span style=''></span><span style='background: #F0ADAD'>      sender ! GenericHttpResponse(StatusCodes.BadRequest, &quot;Invalid Request&quot;)
+</span>15 <span style=''></span><span style='background: #F0ADAD'>    } {
+</span>16 <span style=''></span><span style='background: #F0ADAD'>      ref =&gt;  ref forward command
+</span>17 <span style=''></span><span style='background: #F0ADAD'>    }</span><span style=''>
+</span>18 <span style=''>  }
+</span>19 <span style=''>}
+</span>20 <span style=''>
+</span>21 <span style=''>
+</span>22 <span style=''>object RouterActor {
+</span>23 <span style=''>  private var actorCache = </span><span style='background: #F0ADAD'>Map[MessageType, ActorRef]()</span><span style=''>
+</span>24 <span style=''>  def props()(implicit ec: ExecutionContext,rc:ResourceContext) = </span><span style='background: #F0ADAD'>Props(new RouterActor())</span><span style=''>
+</span>25 <span style=''>
+</span>26 <span style=''>  def defaultResolver(implicit ec: ExecutionContext,context: ActorContext,rc:ResourceContext): Any =&gt; Option[ActorRef] = {
+</span>27 <span style=''>    case c: CreateLinkedAccount =&gt; </span><span style='background: #F0ADAD'>resolveFromCache(c, () =&gt; AccountsActor.props())</span><span style=''>
+</span>28 <span style=''>    case g: GetAccountDetailsRequest =&gt; </span><span style='background: #F0ADAD'>resolveFromCache(g, () =&gt; AccountsActor.props())</span><span style=''>
+</span>29 <span style=''>    case x =&gt; </span><span style='background: #F0ADAD'>None</span><span style=''>
+</span>30 <span style=''>  }
+</span>31 <span style=''>
+</span>32 <span style=''>  def resolveFromCache(command: MessageType, props: () =&gt; Props)(implicit context: ActorContext): Option[ActorRef] = {
+</span>33 <span style=''>    </span><span style='background: #F0ADAD'>actorCache.get(command)</span><span style=''> match {
+</span>34 <span style=''>      case Some(ref) =&gt; </span><span style='background: #F0ADAD'>Some(ref)</span><span style=''>
+</span>35 <span style=''>      case None =&gt;
+</span>36 <span style=''>        val ref = </span><span style='background: #F0ADAD'>context.actorOf(props())</span><span style=''>
+</span>37 <span style=''>        </span><span style='background: #F0ADAD'>actorCache += command -&gt; ref</span><span style=''>
+</span>38 <span style=''>        </span><span style='background: #F0ADAD'>Some(ref)</span><span style=''>
+</span>39 <span style=''>    }
+</span>40 <span style=''>  }
+</span>41 <span style=''>
+</span>42 <span style=''>}
+</span>43 <span style=''>
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          53
+        </td>
+        <td>
+          567
+          -
+          567
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.actors.RouterActor.rc
+        </td>
+        <td style="background: #F0ADAD">
+          RouterActor.this.rc
+        </td>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          55
+        </td>
+        <td>
+          536
+          -
+          583
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Option.getOrElse
+        </td>
+        <td style="background: #F0ADAD">
+          RouterActor.this.resolver.getOrElse[Any =&gt; Option[akka.actor.ActorRef]](RouterActor.defaultResolver(RouterActor.this.ec, RouterActor.this.context, RouterActor.this.rc))
+        </td>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          52
+        </td>
+        <td>
+          567
+          -
+          567
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          akka.actor.Actor.context
+        </td>
+        <td style="background: #F0ADAD">
+          RouterActor.this.context
+        </td>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          54
+        </td>
+        <td>
+          555
+          -
+          582
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          com.accounts.actors.RouterActor.defaultResolver
+        </td>
+        <td style="background: #F0ADAD">
+          RouterActor.defaultResolver(RouterActor.this.ec, RouterActor.this.context, RouterActor.this.rc)
+        </td>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          51
+        </td>
+        <td>
+          567
+          -
+          567
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.actors.RouterActor.ec
+        </td>
+        <td style="background: #F0ADAD">
+          RouterActor.this.ec
+        </td>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          65
+        </td>
+        <td>
+          619
+          -
+          619
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.actors.RouterActor.$anonfun.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anonfun()
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          59
+        </td>
+        <td>
+          697
+          -
+          759
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.domain.GenericHttpResponse.apply
+        </td>
+        <td style="background: #F0ADAD">
+          com.accounts.domain.GenericHttpResponse.apply(akka.http.scaladsl.model.StatusCodes.BadRequest, &quot;Invalid Request&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          56
+        </td>
+        <td>
+          688
+          -
+          694
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.actor.Actor.sender
+        </td>
+        <td style="background: #F0ADAD">
+          RouterActor.this.sender()
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          58
+        </td>
+        <td>
+          741
+          -
+          758
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Invalid Request&quot;
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          61
+        </td>
+        <td>
+          688
+          -
+          759
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          akka.actor.ScalaActorRef.!
+        </td>
+        <td style="background: #F0ADAD">
+          actor.this.`package`.actorRef2Scala(RouterActor.this.sender()).!(com.accounts.domain.GenericHttpResponse.apply(akka.http.scaladsl.model.StatusCodes.BadRequest, &quot;Invalid Request&quot;))(RouterActor.this.self)
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          60
+        </td>
+        <td>
+          695
+          -
+          695
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          akka.actor.Actor.self
+        </td>
+        <td style="background: #F0ADAD">
+          RouterActor.this.self
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          57
+        </td>
+        <td>
+          717
+          -
+          739
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          akka.http.scaladsl.model.StatusCodes.BadRequest
+        </td>
+        <td style="background: #F0ADAD">
+          akka.http.scaladsl.model.StatusCodes.BadRequest
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          64
+        </td>
+        <td>
+          647
+          -
+          810
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Option.fold
+        </td>
+        <td style="background: #F0ADAD">
+          RouterActor.this.hierarchyResolver.apply(command).fold[Unit](actor.this.`package`.actorRef2Scala(RouterActor.this.sender()).!(com.accounts.domain.GenericHttpResponse.apply(akka.http.scaladsl.model.StatusCodes.BadRequest, &quot;Invalid Request&quot;))(RouterActor.this.self))(((ref: akka.actor.ActorRef) =&gt; ref.forward(command)(RouterActor.this.context)))
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          62
+        </td>
+        <td>
+          788
+          -
+          788
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          akka.actor.Actor.context
+        </td>
+        <td style="background: #F0ADAD">
+          RouterActor.this.context
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          63
+        </td>
+        <td>
+          784
+          -
+          803
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          akka.actor.ActorRef.forward
+        </td>
+        <td style="background: #F0ADAD">
+          ref.forward(command)(RouterActor.this.context)
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          66
+        </td>
+        <td>
+          873
+          -
+          901
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.generic.GenMapFactory.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.Map.apply[com.accounts.domain.MessageType, akka.actor.ActorRef]()
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          68
+        </td>
+        <td>
+          969
+          -
+          993
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          akka.actor.Props.apply
+        </td>
+        <td style="background: #F0ADAD">
+          akka.actor.Props.apply[com.accounts.actors.RouterActor](new RouterActor(actors.this.RouterActor.&lt;init&gt;$default$1)(ec, rc))((ClassTag.apply[com.accounts.actors.RouterActor](classOf[com.accounts.actors.RouterActor]): scala.reflect.ClassTag[com.accounts.actors.RouterActor]))
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          67
+        </td>
+        <td>
+          975
+          -
+          992
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          com.accounts.actors.RouterActor.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new RouterActor(actors.this.RouterActor.&lt;init&gt;$default$1)(ec, rc)
+        </td>
+      </tr><tr>
+        <td>
+          27
+        </td>
+        <td>
+          69
+        </td>
+        <td>
+          1156
+          -
+          1204
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          com.accounts.actors.RouterActor.resolveFromCache
+        </td>
+        <td style="background: #F0ADAD">
+          RouterActor.this.resolveFromCache(c, (() =&gt; AccountsActor.props()(ec, rc)))(context)
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          70
+        </td>
+        <td>
+          1246
+          -
+          1294
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          com.accounts.actors.RouterActor.resolveFromCache
+        </td>
+        <td style="background: #F0ADAD">
+          RouterActor.this.resolveFromCache(g, (() =&gt; AccountsActor.props()(ec, rc)))(context)
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          71
+        </td>
+        <td>
+          1310
+          -
+          1314
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.None
+        </td>
+        <td style="background: #F0ADAD">
+          scala.None
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          72
+        </td>
+        <td>
+          1447
+          -
+          1470
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.MapLike.get
+        </td>
+        <td style="background: #F0ADAD">
+          RouterActor.this.actorCache.get(command)
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          73
+        </td>
+        <td>
+          1504
+          -
+          1513
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Some.apply[akka.actor.ActorRef](ref)
+        </td>
+      </tr><tr>
+        <td>
+          36
+        </td>
+        <td>
+          74
+        </td>
+        <td>
+          1569
+          -
+          1576
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Function0.apply
+        </td>
+        <td style="background: #F0ADAD">
+          props.apply()
+        </td>
+      </tr><tr>
+        <td>
+          36
+        </td>
+        <td>
+          75
+        </td>
+        <td>
+          1553
+          -
+          1577
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.actor.ActorRefFactory.actorOf
+        </td>
+        <td style="background: #F0ADAD">
+          context.actorOf(props.apply())
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          77
+        </td>
+        <td>
+          1587
+          -
+          1615
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.Map.+
+        </td>
+        <td style="background: #F0ADAD">
+          RouterActor.this.actorCache.+[akka.actor.ActorRef](scala.Predef.ArrowAssoc[com.accounts.domain.MessageType](command).-&gt;[akka.actor.ActorRef](ref))
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          76
+        </td>
+        <td>
+          1601
+          -
+          1615
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.ArrowAssoc.-&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.ArrowAssoc[com.accounts.domain.MessageType](command).-&gt;[akka.actor.ActorRef](ref)
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          78
+        </td>
+        <td>
+          1587
+          -
+          1615
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.actors.RouterActor.actorCache_=
+        </td>
+        <td style="background: #F0ADAD">
+          RouterActor.this.actorCache_=(RouterActor.this.actorCache.+[akka.actor.ActorRef](scala.Predef.ArrowAssoc[com.accounts.domain.MessageType](command).-&gt;[akka.actor.ActorRef](ref)))
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          79
+        </td>
+        <td>
+          1625
+          -
+          1634
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Some.apply[akka.actor.ActorRef](ref)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

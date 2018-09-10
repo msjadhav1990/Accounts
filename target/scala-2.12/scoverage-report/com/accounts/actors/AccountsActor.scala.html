@@ -1,0 +1,534 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          com\accounts\actors\AccountsActor.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package com.accounts.actors
+</span>2 <span style=''>
+</span>3 <span style=''>import akka.actor.{Actor, Props}
+</span>4 <span style=''>import com.accounts.context.ResourceContext
+</span>5 <span style=''>import com.accounts.domain.{CreateLinkedAccount, GetAccountDetailsRequest}
+</span>6 <span style=''>import com.accounts.handlers.AccountsHandler
+</span>7 <span style=''>
+</span>8 <span style=''>import scala.concurrent.ExecutionContext
+</span>9 <span style=''>
+</span>10 <span style=''>
+</span>11 <span style=''>class AccountsActor(implicit ec: ExecutionContext,rc:ResourceContext) extends Actor {
+</span>12 <span style=''>
+</span>13 <span style=''>  override def receive: Receive = {
+</span>14 <span style=''>    case cmd: CreateLinkedAccount =&gt;
+</span>15 <span style=''>      val senderRef = </span><span style='background: #AEF1AE'>sender</span><span style=''>
+</span>16 <span style=''>      </span><span style='background: #AEF1AE'>AccountsHandler.createAccount(cmd).map(d=&gt;{
+</span>17 <span style=''></span><span style='background: #AEF1AE'>        senderRef ! d
+</span>18 <span style=''></span><span style='background: #AEF1AE'>      })</span><span style=''>
+</span>19 <span style=''>
+</span>20 <span style=''>    case cmd:GetAccountDetailsRequest =&gt; val senderRef = </span><span style='background: #AEF1AE'>sender</span><span style=''>
+</span>21 <span style=''>      </span><span style='background: #AEF1AE'>AccountsHandler.getAccountAndTransactions(cmd.custId).map(d=&gt;{
+</span>22 <span style=''></span><span style='background: #AEF1AE'>        senderRef ! d
+</span>23 <span style=''></span><span style='background: #AEF1AE'>      })</span><span style=''>
+</span>24 <span style=''>
+</span>25 <span style=''>
+</span>26 <span style=''>  }
+</span>27 <span style=''>}
+</span>28 <span style=''>
+</span>29 <span style=''>object AccountsActor {
+</span>30 <span style=''>  def props()(implicit ec: ExecutionContext,rc:ResourceContext) = </span><span style='background: #AEF1AE'>Props(new AccountsActor())</span><span style=''>
+</span>31 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          13
+        </td>
+        <td>
+          48
+        </td>
+        <td>
+          403
+          -
+          403
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.actors.AccountsActor.$anonfun.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new $anonfun()
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          29
+        </td>
+        <td>
+          466
+          -
+          472
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.actor.Actor.sender
+        </td>
+        <td style="background: #AEF1AE">
+          AccountsActor.this.sender()
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          32
+        </td>
+        <td>
+          509
+          -
+          509
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.actors.AccountsActor.rc
+        </td>
+        <td style="background: #AEF1AE">
+          AccountsActor.this.rc
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          35
+        </td>
+        <td>
+          518
+          -
+          518
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.actors.AccountsActor.ec
+        </td>
+        <td style="background: #AEF1AE">
+          AccountsActor.this.ec
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          31
+        </td>
+        <td>
+          509
+          -
+          509
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.actors.AccountsActor.ec
+        </td>
+        <td style="background: #AEF1AE">
+          AccountsActor.this.ec
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          37
+        </td>
+        <td>
+          518
+          -
+          518
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          ()
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          36
+        </td>
+        <td>
+          480
+          -
+          556
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          scala.concurrent.Future.map
+        </td>
+        <td style="background: #AEF1AE">
+          com.accounts.handlers.AccountsHandler.createAccount(cmd, com.accounts.handlers.AccountsHandler.createAccount$default$2)(AccountsActor.this.ec, AccountsActor.this.rc).map[Unit](((d: com.accounts.domain.GenericHttpResponse) =&gt; actor.this.`package`.actorRef2Scala(senderRef).!(d)(AccountsActor.this.self)))(AccountsActor.this.ec)
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          30
+        </td>
+        <td>
+          496
+          -
+          496
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.handlers.AccountsHandler.createAccount$default$2
+        </td>
+        <td style="background: #AEF1AE">
+          com.accounts.handlers.AccountsHandler.createAccount$default$2
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          34
+        </td>
+        <td>
+          533
+          -
+          546
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          akka.actor.ScalaActorRef.!
+        </td>
+        <td style="background: #AEF1AE">
+          actor.this.`package`.actorRef2Scala(senderRef).!(d)(AccountsActor.this.self)
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          33
+        </td>
+        <td>
+          543
+          -
+          543
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          akka.actor.Actor.self
+        </td>
+        <td style="background: #AEF1AE">
+          AccountsActor.this.self
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          38
+        </td>
+        <td>
+          617
+          -
+          623
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.actor.Actor.sender
+        </td>
+        <td style="background: #AEF1AE">
+          AccountsActor.this.sender()
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          41
+        </td>
+        <td>
+          672
+          -
+          672
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.actors.AccountsActor.ec
+        </td>
+        <td style="background: #AEF1AE">
+          AccountsActor.this.ec
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          47
+        </td>
+        <td>
+          688
+          -
+          688
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          ()
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          46
+        </td>
+        <td>
+          631
+          -
+          726
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          scala.concurrent.Future.map
+        </td>
+        <td style="background: #AEF1AE">
+          com.accounts.handlers.AccountsHandler.getAccountAndTransactions(cmd.custId, com.accounts.handlers.AccountsHandler.getAccountAndTransactions$default$2)(AccountsActor.this.ec, AccountsActor.this.rc).map[Unit](((d: com.accounts.domain.GenericHttpResponse) =&gt; actor.this.`package`.actorRef2Scala(senderRef).!(d)(AccountsActor.this.self)))(AccountsActor.this.ec)
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          40
+        </td>
+        <td>
+          647
+          -
+          647
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.handlers.AccountsHandler.getAccountAndTransactions$default$2
+        </td>
+        <td style="background: #AEF1AE">
+          com.accounts.handlers.AccountsHandler.getAccountAndTransactions$default$2
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          45
+        </td>
+        <td>
+          688
+          -
+          688
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.actors.AccountsActor.ec
+        </td>
+        <td style="background: #AEF1AE">
+          AccountsActor.this.ec
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          39
+        </td>
+        <td>
+          673
+          -
+          683
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.domain.GetAccountDetailsRequest.custId
+        </td>
+        <td style="background: #AEF1AE">
+          cmd.custId
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          42
+        </td>
+        <td>
+          672
+          -
+          672
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.actors.AccountsActor.rc
+        </td>
+        <td style="background: #AEF1AE">
+          AccountsActor.this.rc
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          44
+        </td>
+        <td>
+          703
+          -
+          716
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          akka.actor.ScalaActorRef.!
+        </td>
+        <td style="background: #AEF1AE">
+          actor.this.`package`.actorRef2Scala(senderRef).!(d)(AccountsActor.this.self)
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          43
+        </td>
+        <td>
+          713
+          -
+          713
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          akka.actor.Actor.self
+        </td>
+        <td style="background: #AEF1AE">
+          AccountsActor.this.self
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          50
+        </td>
+        <td>
+          832
+          -
+          858
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          akka.actor.Props.apply
+        </td>
+        <td style="background: #AEF1AE">
+          akka.actor.Props.apply[com.accounts.actors.AccountsActor](new AccountsActor()(ec, rc))((ClassTag.apply[com.accounts.actors.AccountsActor](classOf[com.accounts.actors.AccountsActor]): scala.reflect.ClassTag[com.accounts.actors.AccountsActor]))
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          49
+        </td>
+        <td>
+          838
+          -
+          857
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          com.accounts.actors.AccountsActor.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new AccountsActor()(ec, rc)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

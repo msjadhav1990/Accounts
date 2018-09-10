@@ -1,0 +1,1149 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          com\accounts\http\TransActionManager.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package com.accounts.http
+</span>2 <span style=''>
+</span>3 <span style=''>import java.lang.reflect.{ParameterizedType, Type}
+</span>4 <span style=''>
+</span>5 <span style=''>import com.accounts.config.ServiceConfiguration
+</span>6 <span style=''>import com.accounts.domain.{AccountDetailsWithTransactions, TransactionRequest}
+</span>7 <span style=''>import com.google.gson._
+</span>8 <span style=''>import org.apache.http.client.entity.EntityBuilder
+</span>9 <span style=''>import org.apache.http.client.methods.{CloseableHttpResponse, HttpGet, HttpPost}
+</span>10 <span style=''>import org.apache.http.entity.ContentType
+</span>11 <span style=''>import org.apache.http.util.EntityUtils
+</span>12 <span style=''>
+</span>13 <span style=''>
+</span>14 <span style=''>trait TransActionManager {
+</span>15 <span style=''>
+</span>16 <span style=''>  def getTransactions(accountNo:Long)(implicit sc:ServiceConfiguration,httpExecutor: RawHttpExecutor= new RawHttpExecutor):Option[AccountDetailsWithTransactions]
+</span>17 <span style=''>  def postTransaction(transactionRequest:TransactionRequest)(implicit sc:ServiceConfiguration,httpExecutor: RawHttpExecutor= new RawHttpExecutor):Boolean
+</span>18 <span style=''>}
+</span>19 <span style=''>case class GsonListAdapter() extends JsonSerializer[List[_]] with JsonDeserializer[List[_]] {
+</span>20 <span style=''>  import sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl
+</span>21 <span style=''>
+</span>22 <span style=''>  import scala.collection.JavaConverters._
+</span>23 <span style=''>
+</span>24 <span style=''>  @throws(classOf[JsonParseException])
+</span>25 <span style=''>  def deserialize(jsonElement: JsonElement, t: Type, jdc: JsonDeserializationContext): List[_] = {
+</span>26 <span style=''>    val p = </span><span style='background: #AEF1AE'>scalaListTypeToJava(t.asInstanceOf[ParameterizedType])</span><span style=''> // Safe casting because List is a ParameterizedType.
+</span>27 <span style=''>    val javaList: java.util.List[_ &lt;: Any] = </span><span style='background: #AEF1AE'>jdc.deserialize(jsonElement, p)</span><span style=''>
+</span>28 <span style=''>    </span><span style='background: #AEF1AE'>javaList.asScala.toList</span><span style=''>
+</span>29 <span style=''>  }
+</span>30 <span style=''>
+</span>31 <span style=''>  override def serialize(obj: List[_], t: Type, jdc: JsonSerializationContext): JsonElement = {
+</span>32 <span style=''>    val p = </span><span style='background: #F0ADAD'>scalaListTypeToJava(t.asInstanceOf[ParameterizedType])</span><span style=''> // Safe casting because List is a ParameterizedType.
+</span>33 <span style=''>    </span><span style='background: #F0ADAD'>jdc.serialize(obj.asInstanceOf[List[Any]].asJava, p)</span><span style=''>
+</span>34 <span style=''>  }
+</span>35 <span style=''>
+</span>36 <span style=''>  private def scalaListTypeToJava(t: ParameterizedType): ParameterizedType = {
+</span>37 <span style=''>    </span><span style='background: #AEF1AE'>ParameterizedTypeImpl.make(classOf[java.util.List[_]], t.getActualTypeArguments, null)</span><span style=''>
+</span>38 <span style=''>  }
+</span>39 <span style=''>}
+</span>40 <span style=''> object TransActionManager extends TransActionManager{
+</span>41 <span style=''>
+</span>42 <span style=''>   val json_parser = </span><span style='background: #AEF1AE'>new GsonBuilder().registerTypeHierarchyAdapter(classOf[List[_]], new GsonListAdapter()).create()</span><span style=''>
+</span>43 <span style=''>
+</span>44 <span style=''>   override def getTransactions(accountNo: Long)(implicit sc:ServiceConfiguration,httpExecutor: RawHttpExecutor= new RawHttpExecutor):Option[AccountDetailsWithTransactions] = {
+</span>45 <span style=''>     val httpGet: HttpGet = </span><span style='background: #AEF1AE'>new HttpGet(s&quot;http://${sc.txServiceConfig.hostname}:${sc.txServiceConfig.port}${sc.txServiceConfig.uri}/${accountNo}&quot;)</span><span style=''>
+</span>46 <span style=''>     val response: CloseableHttpResponse = </span><span style='background: #AEF1AE'>httpExecutor.execute(httpGet)</span><span style=''>
+</span>47 <span style=''>
+</span>48 <span style=''>     </span><span style='background: #AEF1AE'>response.getStatusLine.getStatusCode</span><span style=''> match {
+</span>49 <span style=''>       case 200=&gt;
+</span>50 <span style=''>         </span><span style='background: #AEF1AE'>json_parser.fromJson(EntityUtils.toString(response.getEntity), classOf[AccountDetailsWithTransactions])</span><span style=''> match {
+</span>51 <span style=''>           case null=&gt; </span><span style='background: #F0ADAD'>None</span><span style=''>
+</span>52 <span style=''>           case p=&gt; </span><span style='background: #AEF1AE'>Some(p)</span><span style=''>
+</span>53 <span style=''>         }
+</span>54 <span style=''>       case 404=&gt; </span><span style='background: #AEF1AE'>None</span><span style=''>
+</span>55 <span style=''>       case _=&gt; </span><span style='background: #AEF1AE'>throw new RuntimeException(&quot;Error in getting transactions&quot;)</span><span style=''>
+</span>56 <span style=''>     }
+</span>57 <span style=''>
+</span>58 <span style=''>
+</span>59 <span style=''>   }
+</span>60 <span style=''>
+</span>61 <span style=''>   override def postTransaction(transactionRequest: TransactionRequest)(implicit sc:ServiceConfiguration,httpExecutor: RawHttpExecutor= new RawHttpExecutor): Boolean = {
+</span>62 <span style=''>
+</span>63 <span style=''>     val httpPost: HttpPost = </span><span style='background: #AEF1AE'>new HttpPost(s&quot;http://${sc.txServiceConfig.hostname}:${sc.txServiceConfig.port}${sc.txServiceConfig.uri}&quot;)</span><span style=''>
+</span>64 <span style=''>
+</span>65 <span style=''>
+</span>66 <span style=''>     val entity= </span><span style='background: #AEF1AE'>EntityBuilder.create().setText(transactionRequest.toJson).setContentType(ContentType.APPLICATION_JSON).build()</span><span style=''>
+</span>67 <span style=''>     </span><span style='background: #AEF1AE'>httpPost.setEntity(entity)</span><span style=''>
+</span>68 <span style=''>     val response: CloseableHttpResponse = </span><span style='background: #AEF1AE'>httpExecutor.execute(httpPost)</span><span style=''>
+</span>69 <span style=''>
+</span>70 <span style=''>     </span><span style='background: #AEF1AE'>response.getStatusLine.getStatusCode</span><span style=''> match {
+</span>71 <span style=''>       case 200=&gt; </span><span style='background: #AEF1AE'>true</span><span style=''>
+</span>72 <span style=''>       case _=&gt; </span><span style='background: #AEF1AE'>false</span><span style=''>
+</span>73 <span style=''>     }
+</span>74 <span style=''>
+</span>75 <span style=''>
+</span>76 <span style=''>
+</span>77 <span style=''>
+</span>78 <span style=''>   }
+</span>79 <span style=''> }
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          119
+        </td>
+        <td>
+          1178
+          -
+          1232
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.http.GsonListAdapter.scalaListTypeToJava
+        </td>
+        <td style="background: #AEF1AE">
+          GsonListAdapter.this.scalaListTypeToJava(t.asInstanceOf[java.lang.reflect.ParameterizedType])
+        </td>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          118
+        </td>
+        <td>
+          1198
+          -
+          1231
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.Any.asInstanceOf
+        </td>
+        <td style="background: #AEF1AE">
+          t.asInstanceOf[java.lang.reflect.ParameterizedType]
+        </td>
+      </tr><tr>
+        <td>
+          27
+        </td>
+        <td>
+          120
+        </td>
+        <td>
+          1332
+          -
+          1363
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.google.gson.JsonDeserializationContext.deserialize
+        </td>
+        <td style="background: #AEF1AE">
+          jdc.deserialize[Nothing](jsonElement, p)
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          121
+        </td>
+        <td>
+          1369
+          -
+          1392
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.collection.TraversableOnce.toList
+        </td>
+        <td style="background: #AEF1AE">
+          scala.collection.JavaConverters.asScalaBufferConverter[_$4](javaList).asScala.toList
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          122
+        </td>
+        <td>
+          1530
+          -
+          1563
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.Any.asInstanceOf
+        </td>
+        <td style="background: #F0ADAD">
+          t.asInstanceOf[java.lang.reflect.ParameterizedType]
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          123
+        </td>
+        <td>
+          1510
+          -
+          1564
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.http.GsonListAdapter.scalaListTypeToJava
+        </td>
+        <td style="background: #F0ADAD">
+          GsonListAdapter.this.scalaListTypeToJava(t.asInstanceOf[java.lang.reflect.ParameterizedType])
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          125
+        </td>
+        <td>
+          1637
+          -
+          1671
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.collection.convert.Decorators.AsJava.asJava
+        </td>
+        <td style="background: #F0ADAD">
+          scala.collection.JavaConverters.seqAsJavaListConverter[Any](obj.asInstanceOf[List[Any]]).asJava
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          124
+        </td>
+        <td>
+          1637
+          -
+          1664
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.Any.asInstanceOf
+        </td>
+        <td style="background: #F0ADAD">
+          obj.asInstanceOf[List[Any]]
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          126
+        </td>
+        <td>
+          1623
+          -
+          1675
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.google.gson.JsonSerializationContext.serialize
+        </td>
+        <td style="background: #F0ADAD">
+          jdc.serialize(scala.collection.JavaConverters.seqAsJavaListConverter[Any](obj.asInstanceOf[List[Any]]).asJava, p)
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          128
+        </td>
+        <td>
+          1823
+          -
+          1847
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.reflect.ParameterizedType.getActualTypeArguments
+        </td>
+        <td style="background: #AEF1AE">
+          t.getActualTypeArguments()
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          127
+        </td>
+        <td>
+          1795
+          -
+          1821
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          classOf[java.util.List]
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          130
+        </td>
+        <td>
+          1768
+          -
+          1854
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl.make
+        </td>
+        <td style="background: #AEF1AE">
+          sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl.make(classOf[java.util.List], t.getActualTypeArguments(), null)
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          129
+        </td>
+        <td>
+          1849
+          -
+          1853
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          null
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          131
+        </td>
+        <td>
+          1943
+          -
+          2039
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.google.gson.GsonBuilder.create
+        </td>
+        <td style="background: #AEF1AE">
+          new com.google.gson.GsonBuilder().registerTypeHierarchyAdapter(classOf[scala.collection.immutable.List], new GsonListAdapter()).create()
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          137
+        </td>
+        <td>
+          2272
+          -
+          2299
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.config.HttpConfiguration.hostname
+        </td>
+        <td style="background: #AEF1AE">
+          sc.txServiceConfig.hostname
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          140
+        </td>
+        <td>
+          2261
+          -
+          2366
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.StringContext.s
+        </td>
+        <td style="background: #AEF1AE">
+          scala.StringContext.apply(&quot;http://&quot;, &quot;:&quot;, &quot;&quot;, &quot;/&quot;, &quot;&quot;).s(sc.txServiceConfig.hostname, sc.txServiceConfig.port, sc.txServiceConfig.uri, accountNo)
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          134
+        </td>
+        <td>
+          2327
+          -
+          2328
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;&quot;
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          133
+        </td>
+        <td>
+          2300
+          -
+          2302
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;:&quot;
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          136
+        </td>
+        <td>
+          2365
+          -
+          2366
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;&quot;
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          139
+        </td>
+        <td>
+          2329
+          -
+          2351
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.config.HttpConfiguration.uri
+        </td>
+        <td style="background: #AEF1AE">
+          sc.txServiceConfig.uri
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          138
+        </td>
+        <td>
+          2303
+          -
+          2326
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.config.HttpConfiguration.port
+        </td>
+        <td style="background: #AEF1AE">
+          sc.txServiceConfig.port
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          132
+        </td>
+        <td>
+          2263
+          -
+          2271
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;http://&quot;
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          141
+        </td>
+        <td>
+          2249
+          -
+          2367
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          org.apache.http.client.methods.HttpGet.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new org.apache.http.client.methods.HttpGet(scala.StringContext.apply(&quot;http://&quot;, &quot;:&quot;, &quot;&quot;, &quot;/&quot;, &quot;&quot;).s(sc.txServiceConfig.hostname, sc.txServiceConfig.port, sc.txServiceConfig.uri, accountNo))
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          135
+        </td>
+        <td>
+          2352
+          -
+          2354
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;/&quot;
+        </td>
+      </tr><tr>
+        <td>
+          46
+        </td>
+        <td>
+          142
+        </td>
+        <td>
+          2412
+          -
+          2441
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.http.RawHttpExecutor.execute
+        </td>
+        <td style="background: #AEF1AE">
+          httpExecutor.execute(httpGet)
+        </td>
+      </tr><tr>
+        <td>
+          48
+        </td>
+        <td>
+          143
+        </td>
+        <td>
+          2450
+          -
+          2486
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          org.apache.http.StatusLine.getStatusCode
+        </td>
+        <td style="background: #AEF1AE">
+          response.getStatusLine().getStatusCode()
+        </td>
+      </tr><tr>
+        <td>
+          50
+        </td>
+        <td>
+          146
+        </td>
+        <td>
+          2587
+          -
+          2626
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          classOf[com.accounts.domain.AccountDetailsWithTransactions]
+        </td>
+      </tr><tr>
+        <td>
+          50
+        </td>
+        <td>
+          145
+        </td>
+        <td>
+          2545
+          -
+          2585
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          org.apache.http.util.EntityUtils.toString
+        </td>
+        <td style="background: #AEF1AE">
+          org.apache.http.util.EntityUtils.toString(response.getEntity())
+        </td>
+      </tr><tr>
+        <td>
+          50
+        </td>
+        <td>
+          147
+        </td>
+        <td>
+          2524
+          -
+          2627
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.google.gson.Gson.fromJson
+        </td>
+        <td style="background: #AEF1AE">
+          TransActionManager.this.json_parser.fromJson[com.accounts.domain.AccountDetailsWithTransactions](org.apache.http.util.EntityUtils.toString(response.getEntity()), classOf[com.accounts.domain.AccountDetailsWithTransactions])
+        </td>
+      </tr><tr>
+        <td>
+          50
+        </td>
+        <td>
+          144
+        </td>
+        <td>
+          2566
+          -
+          2584
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          org.apache.http.HttpResponse.getEntity
+        </td>
+        <td style="background: #AEF1AE">
+          response.getEntity()
+        </td>
+      </tr><tr>
+        <td>
+          51
+        </td>
+        <td>
+          148
+        </td>
+        <td>
+          2660
+          -
+          2664
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.None
+        </td>
+        <td style="background: #F0ADAD">
+          scala.None
+        </td>
+      </tr><tr>
+        <td>
+          52
+        </td>
+        <td>
+          149
+        </td>
+        <td>
+          2686
+          -
+          2693
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Some.apply[com.accounts.domain.AccountDetailsWithTransactions](p)
+        </td>
+      </tr><tr>
+        <td>
+          54
+        </td>
+        <td>
+          150
+        </td>
+        <td>
+          2725
+          -
+          2729
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.None
+        </td>
+        <td style="background: #AEF1AE">
+          scala.None
+        </td>
+      </tr><tr>
+        <td>
+          55
+        </td>
+        <td>
+          151
+        </td>
+        <td>
+          2747
+          -
+          2806
+        </td>
+        <td>
+          Throw
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          throw new scala.`package`.RuntimeException(&quot;Error in getting transactions&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          63
+        </td>
+        <td>
+          155
+        </td>
+        <td>
+          3135
+          -
+          3136
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;&quot;
+        </td>
+      </tr><tr>
+        <td>
+          63
+        </td>
+        <td>
+          158
+        </td>
+        <td>
+          3112
+          -
+          3134
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.config.HttpConfiguration.uri
+        </td>
+        <td style="background: #AEF1AE">
+          sc.txServiceConfig.uri
+        </td>
+      </tr><tr>
+        <td>
+          63
+        </td>
+        <td>
+          160
+        </td>
+        <td>
+          3031
+          -
+          3137
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          org.apache.http.client.methods.HttpPost.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new org.apache.http.client.methods.HttpPost(scala.StringContext.apply(&quot;http://&quot;, &quot;:&quot;, &quot;&quot;, &quot;&quot;).s(sc.txServiceConfig.hostname, sc.txServiceConfig.port, sc.txServiceConfig.uri))
+        </td>
+      </tr><tr>
+        <td>
+          63
+        </td>
+        <td>
+          154
+        </td>
+        <td>
+          3110
+          -
+          3111
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;&quot;
+        </td>
+      </tr><tr>
+        <td>
+          63
+        </td>
+        <td>
+          157
+        </td>
+        <td>
+          3086
+          -
+          3109
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.config.HttpConfiguration.port
+        </td>
+        <td style="background: #AEF1AE">
+          sc.txServiceConfig.port
+        </td>
+      </tr><tr>
+        <td>
+          63
+        </td>
+        <td>
+          156
+        </td>
+        <td>
+          3055
+          -
+          3082
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.accounts.config.HttpConfiguration.hostname
+        </td>
+        <td style="background: #AEF1AE">
+          sc.txServiceConfig.hostname
+        </td>
+      </tr><tr>
+        <td>
+          63
+        </td>
+        <td>
+          159
+        </td>
+        <td>
+          3044
+          -
+          3136
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.StringContext.s
+        </td>
+        <td style="background: #AEF1AE">
+          scala.StringContext.apply(&quot;http://&quot;, &quot;:&quot;, &quot;&quot;, &quot;&quot;).s(sc.txServiceConfig.hostname, sc.txServiceConfig.port, sc.txServiceConfig.uri)
+        </td>
+      </tr><tr>
+        <td>
+          63
+        </td>
+        <td>
+          153
+        </td>
+        <td>
+          3083
+          -
+          3085
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;:&quot;
+        </td>
+      </tr><tr>
+        <td>
+          63
+        </td>
+        <td>
+          152
+        </td>
+        <td>
+          3046
+          -
+          3054
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;http://&quot;
+        </td>
+      </tr><tr>
+        <td>
+          66
+        </td>
+        <td>
+          161
+        </td>
+        <td>
+          3160
+          -
+          3270
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          org.apache.http.client.entity.EntityBuilder.build
+        </td>
+        <td style="background: #AEF1AE">
+          org.apache.http.client.entity.EntityBuilder.create().setText(transactionRequest.toJson).setContentType(org.apache.http.entity.ContentType.APPLICATION_JSON).build()
+        </td>
+      </tr><tr>
+        <td>
+          67
+        </td>
+        <td>
+          162
+        </td>
+        <td>
+          3277
+          -
+          3303
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          org.apache.http.client.methods.HttpEntityEnclosingRequestBase.setEntity
+        </td>
+        <td style="background: #AEF1AE">
+          httpPost.setEntity(entity)
+        </td>
+      </tr><tr>
+        <td>
+          68
+        </td>
+        <td>
+          163
+        </td>
+        <td>
+          3348
+          -
+          3378
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.accounts.http.RawHttpExecutor.execute
+        </td>
+        <td style="background: #AEF1AE">
+          httpExecutor.execute(httpPost)
+        </td>
+      </tr><tr>
+        <td>
+          70
+        </td>
+        <td>
+          164
+        </td>
+        <td>
+          3387
+          -
+          3423
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          org.apache.http.StatusLine.getStatusCode
+        </td>
+        <td style="background: #AEF1AE">
+          response.getStatusLine().getStatusCode()
+        </td>
+      </tr><tr>
+        <td>
+          71
+        </td>
+        <td>
+          165
+        </td>
+        <td>
+          3451
+          -
+          3455
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          true
+        </td>
+      </tr><tr>
+        <td>
+          72
+        </td>
+        <td>
+          166
+        </td>
+        <td>
+          3473
+          -
+          3478
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          false
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

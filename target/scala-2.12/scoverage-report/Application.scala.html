@@ -1,0 +1,498 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          Application.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>import java.util.concurrent.Executors
+</span>2 <span style=''>
+</span>3 <span style=''>import akka.Done
+</span>4 <span style=''>import akka.actor.ActorSystem
+</span>5 <span style=''>import akka.stream.ActorMaterializer
+</span>6 <span style=''>
+</span>7 <span style=''>import scala.concurrent.ExecutionContext
+</span>8 <span style=''>import scala.util.{Failure, Success}
+</span>9 <span style=''>
+</span>10 <span style=''>object Application extends App  {
+</span>11 <span style=''>  var hook: Option[ActorSystem] = </span><span style='background: #F0ADAD'>None</span><span style=''>
+</span>12 <span style=''>  var portBindingHook: Option[Done] = </span><span style='background: #F0ADAD'>None</span><span style=''>
+</span>13 <span style=''>
+</span>14 <span style=''>
+</span>15 <span style=''>
+</span>16 <span style=''>      implicit val ec = </span><span style='background: #F0ADAD'>ExecutionContext.fromExecutor(Executors.newFixedThreadPool(10))</span><span style=''>
+</span>17 <span style=''>      implicit val actorSystem = </span><span style='background: #F0ADAD'>ActorSystem(&quot;Accounts-System&quot;)</span><span style=''>
+</span>18 <span style=''>      implicit val mat = </span><span style='background: #F0ADAD'>ActorMaterializer()</span><span style=''>
+</span>19 <span style=''>      </span><span style='background: #F0ADAD'>AccountsServiceApp.start().onComplete {
+</span>20 <span style=''></span><span style='background: #F0ADAD'>        case Success(o) =&gt; {
+</span>21 <span style=''></span><span style='background: #F0ADAD'>          portBindingHook = Some(o)
+</span>22 <span style=''></span><span style='background: #F0ADAD'>          hook = Some(actorSystem)
+</span>23 <span style=''></span><span style='background: #F0ADAD'>        }
+</span>24 <span style=''></span><span style='background: #F0ADAD'>        case Failure(e) =&gt; {
+</span>25 <span style=''></span><span style='background: #F0ADAD'>          e.printStackTrace()
+</span>26 <span style=''></span><span style='background: #F0ADAD'>          //loggerF.error(&quot;Service could not be started&quot;)
+</span>27 <span style=''></span><span style='background: #F0ADAD'>        }
+</span>28 <span style=''></span><span style='background: #F0ADAD'>      }</span><span style=''>
+</span>29 <span style=''>
+</span>30 <span style=''>
+</span>31 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          9
+        </td>
+        <td>
+          281
+          -
+          285
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.None
+        </td>
+        <td style="background: #F0ADAD">
+          scala.None
+        </td>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          10
+        </td>
+        <td>
+          325
+          -
+          329
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.None
+        </td>
+        <td style="background: #F0ADAD">
+          scala.None
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          11
+        </td>
+        <td>
+          391
+          -
+          423
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.util.concurrent.Executors.newFixedThreadPool
+        </td>
+        <td style="background: #F0ADAD">
+          java.util.concurrent.Executors.newFixedThreadPool(10)
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          12
+        </td>
+        <td>
+          361
+          -
+          424
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.concurrent.ExecutionContext.fromExecutor
+        </td>
+        <td style="background: #F0ADAD">
+          scala.concurrent.ExecutionContext.fromExecutor(java.util.concurrent.Executors.newFixedThreadPool(10))
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          13
+        </td>
+        <td>
+          459
+          -
+          489
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          akka.actor.ActorSystem.apply
+        </td>
+        <td style="background: #F0ADAD">
+          akka.actor.ActorSystem.apply(&quot;Accounts-System&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          17
+        </td>
+        <td>
+          516
+          -
+          535
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          akka.stream.ActorMaterializer.apply
+        </td>
+        <td style="background: #F0ADAD">
+          akka.stream.ActorMaterializer.apply(akka.stream.ActorMaterializer.apply$default$1, akka.stream.ActorMaterializer.apply$default$2)(Application.this.actorSystem)
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          14
+        </td>
+        <td>
+          516
+          -
+          516
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          akka.stream.ActorMaterializer.apply$default$1
+        </td>
+        <td style="background: #F0ADAD">
+          akka.stream.ActorMaterializer.apply$default$1
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          16
+        </td>
+        <td>
+          533
+          -
+          533
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          Application.actorSystem
+        </td>
+        <td style="background: #F0ADAD">
+          Application.this.actorSystem
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          15
+        </td>
+        <td>
+          516
+          -
+          516
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          akka.stream.ActorMaterializer.apply$default$2
+        </td>
+        <td style="background: #F0ADAD">
+          akka.stream.ActorMaterializer.apply$default$2
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          20
+        </td>
+        <td>
+          567
+          -
+          567
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          Application.mat
+        </td>
+        <td style="background: #F0ADAD">
+          Application.this.mat
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          19
+        </td>
+        <td>
+          567
+          -
+          567
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          Application.ec
+        </td>
+        <td style="background: #F0ADAD">
+          Application.this.ec
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          28
+        </td>
+        <td>
+          543
+          -
+          836
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          scala.concurrent.Future.onComplete
+        </td>
+        <td style="background: #F0ADAD">
+          AccountsServiceApp.start()(Application.this.actorSystem, Application.this.ec, Application.this.mat).onComplete[Unit](((x0$1: scala.util.Try[akka.Done]) =&gt; x0$1 match {
+  case (value: akka.Done)scala.util.Success[akka.Done]((o @ _)) =&gt; {
+    Application.this.portBindingHook_=(scala.Some.apply[akka.Done](o));
+    Application.this.hook_=(scala.Some.apply[akka.actor.ActorSystem](Application.this.actorSystem))
+  }
+  case (exception: Throwable)scala.util.Failure[akka.Done]((e @ _)) =&gt; e.printStackTrace()
+}))(Application.this.ec)
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          27
+        </td>
+        <td>
+          581
+          -
+          581
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          Application.ec
+        </td>
+        <td style="background: #F0ADAD">
+          Application.this.ec
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          18
+        </td>
+        <td>
+          567
+          -
+          567
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          Application.actorSystem
+        </td>
+        <td style="background: #F0ADAD">
+          Application.this.actorSystem
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          22
+        </td>
+        <td>
+          624
+          -
+          649
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          Application.portBindingHook_=
+        </td>
+        <td style="background: #F0ADAD">
+          Application.this.portBindingHook_=(scala.Some.apply[akka.Done](o))
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          21
+        </td>
+        <td>
+          642
+          -
+          649
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Some.apply[akka.Done](o)
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          23
+        </td>
+        <td>
+          673
+          -
+          684
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          Application.actorSystem
+        </td>
+        <td style="background: #F0ADAD">
+          Application.this.actorSystem
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          25
+        </td>
+        <td>
+          661
+          -
+          685
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          Application.hook_=
+        </td>
+        <td style="background: #F0ADAD">
+          Application.this.hook_=(scala.Some.apply[akka.actor.ActorSystem](Application.this.actorSystem))
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          24
+        </td>
+        <td>
+          668
+          -
+          685
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Some.apply[akka.actor.ActorSystem](Application.this.actorSystem)
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          26
+        </td>
+        <td>
+          738
+          -
+          757
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.Throwable.printStackTrace
+        </td>
+        <td style="background: #F0ADAD">
+          e.printStackTrace()
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>
